@@ -1,0 +1,1 @@
+2025-04-05 06:15:43,290 - INFO - Loglama başlatıldı: C:/Users/mete/Zotero/zotasistan/zapata_m6h\birlesikdosyalar\zapata_m6h_analysis_log_20250405_061543.txt

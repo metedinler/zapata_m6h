@@ -1,0 +1,28 @@
+2025-04-05 06:01:31,286 - INFO - Loglama başlatıldı: C:/Users/mete/Zotero/zotasistan/zapata_m6h\birlesikdosyalar\zapata_m6h_analysis_log_20250405_060131.txt
+2025-04-05 06:01:31,290 - INFO - İşlenecek 49 dosya bulundu
+2025-04-05 06:01:37,846 - INFO - generate_statistics başlıyor
+2025-04-05 06:01:37,856 - INFO - generate_statistics tamamlandı
+2025-04-05 06:01:37,857 - INFO - generate_csv başlıyor
+2025-04-05 06:01:37,863 - INFO - generate_csv tamamlandı
+2025-04-05 06:01:37,864 - INFO - generate_dependency_map başlıyor
+2025-04-05 06:01:38,426 - ERROR - pydeps hatası: usage: pydeps [-h] [--debug] [--config FILE] [--no-config] [--version]
+              [-L LOG] [--find-package] [-v] [-o file] [-T FORMAT]
+              [--display PROGRAM] [--noshow] [--show-deps] [--show-raw-deps]
+              [--deps-output DEPS_OUT] [--show-dot] [--dot-output DOT_OUT]
+              [--nodot] [--no-output] [--show-cycles] [--debug-mf INT]
+              [--noise-level INT] [--max-bacon INT] [--max-module-depth INT]
+              [--pylib] [--pylib-all] [--include-missing]
+              [-x PATTERN [PATTERN ...]] [-xx MODULE [MODULE ...]]
+              [--only MODULE_PATH [MODULE_PATH ...]] [--externals] [--reverse]
+              [--rankdir {TB,BT,LR,RL}] [--cluster] [--min-cluster-size INT]
+              [--max-cluster-size INT] [--keep-target-cluster]
+              [--collapse-target-cluster] [--rmprefix PREFIX [PREFIX ...]]
+              [--start-color INT]
+              fname
+pydeps: error: unrecognized arguments: C:/Users/mete/Zotero/zotasistan/zapata_m6h\birlesikdosyalar\deps.html
+
+2025-04-05 06:01:38,428 - INFO - Çıktılar 'C:/Users/mete/Zotero/zotasistan/zapata_m6h\birlesikdosyalar' altına kaydedildi.
+2025-04-05 06:01:44,439 - INFO - black tamamlandı
+2025-04-05 06:01:45,022 - INFO - flake8 tamamlandı
+2025-04-05 06:01:45,959 - INFO - env_bulucu12.py tamamlandı
+2025-04-05 06:01:50,385 - INFO - mbaix4.py tamamlandı

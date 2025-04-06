@@ -1,13 +1,109 @@
 .env
+.git/COMMIT_EDITMSG
+.git/FETCH_HEAD
+.git/HEAD
+.git/config
+.git/description
+.git/hooks/applypatch-msg.sample
+.git/hooks/commit-msg.sample
+.git/hooks/fsmonitor-watchman.sample
+.git/hooks/post-update.sample
+.git/hooks/pre-applypatch.sample
+.git/hooks/pre-commit.sample
+.git/hooks/pre-merge-commit.sample
+.git/hooks/pre-push.sample
+.git/hooks/pre-rebase.sample
+.git/hooks/pre-receive.sample
+.git/hooks/prepare-commit-msg.sample
+.git/hooks/push-to-checkout.sample
+.git/hooks/sendemail-validate.sample
+.git/hooks/update.sample
+.git/index
+.git/info/exclude
+.git/logs/HEAD
+.git/logs/refs/heads/main
+.git/objects/05/3ceb0edb2c2a99a159b3c1c760aaedcc2c9672
+.git/objects/0b/a3f73898426c8571271e5c9d064ea3b669a8e9
+.git/objects/0d/6f62f96d9f0699bcb51074b32c6254ace478ac
+.git/objects/0e/af3e9faf4d38bd214b2d981334ddeec7df209e
+.git/objects/12/85f7c72b8083e45e24414b853cbe9b7e98030b
+.git/objects/15/c5e3dd275a7ec0614d985555269ad5c0a7b8d3
+.git/objects/18/fe699b4da45e0a27579b1a4579123d1e3ca941
+.git/objects/1c/0263a95a3914a4578eb17ef7b42442da4da15b
+.git/objects/25/b12c3d0135ef6e8d6b11f00c0d9deccc7f9a38
+.git/objects/27/e415750600e4c534439d659241ff7f0ebe4c73
+.git/objects/29/16917537db5694e99cd753ff646fddc40eae33
+.git/objects/2a/122513ff8b225ef7e470d1dafc59aef2030756
+.git/objects/2a/f255e7a8a16a1127026e1410a9889e219335c1
+.git/objects/2b/72493208b95fe9264aa37ca944a534e0f6b31e
+.git/objects/37/f1cd609ac5962833b85a297adcf18c0303b0d2
+.git/objects/39/061d78a016ac571c78cf3a3c499e0120c55599
+.git/objects/3f/f620c9cd3fca06e30628aa9f61522381cce9a8
+.git/objects/46/cebb2b8f24230786093bfd581b3405da5592db
+.git/objects/49/278cfdfe6b44ef3e605c35a696409d3b5604d6
+.git/objects/4e/684a6563267c5bf1c7c9f1d29dbc1163becfef
+.git/objects/4e/85e76d404d482ecc2529df6063ffd30f50017f
+.git/objects/4e/ab8678e146ab0272f9717283c5086b22ab205e
+.git/objects/4e/c72eddbf996dce20960da9933c202b284993cf
+.git/objects/52/97394d817f38e34c8022954f2b621520e78fe5
+.git/objects/58/157003ceb08847791e5c618c22c4138420d03e
+.git/objects/5a/d98b621df931e16edd782aef9e55b9687cb861
+.git/objects/5c/588e58dfb1976e37dc13b83fd6a5e653eff156
+.git/objects/5c/7b294fb0c3e0c536a2e7586517318ee8e88300
+.git/objects/5f/b2677fd1375f61f274014dd4bda1bbf0a9d888
+.git/objects/65/851966d5bf4729a4146193e461dd86762402ec
+.git/objects/66/6ccec1b4fa21f5b868e3de9295911ae7d79507
+.git/objects/68/639f4f18ec2995dbe4319c9384d0576d64cbb6
+.git/objects/6f/05801573e461b30d61304b5617afad83704259
+.git/objects/6f/d60258e7c7597e04e1577402e0b69e86b4b727
+.git/objects/72/c383d7ed71987d1bc146868c6c1bc0727cd2dc
+.git/objects/72/dc79e8a0b7d3de4445cc8b9bd2a9fb6c122f26
+.git/objects/78/e546a498ebc2015d2f3422f7f900cfca40dae6
+.git/objects/7b/9323623291a354ed9c2b48755e4f35029067c7
+.git/objects/7e/2391bd92e2fdd6aeed882c467066f844d2a35a
+.git/objects/84/718a059d250e9ca593e79948193622db98956f
+.git/objects/88/2ca6ae82447051348d80efa9a1e78e257d655b
+.git/objects/8e/849f03cffa8d9d2a4ffac162826037b1df46df
+.git/objects/8e/9cd8f24c148c63bb5dc1ec84a1cba6d623f341
+.git/objects/8f/ea68cf99032c63839b696bb59c19ec093c680d
+.git/objects/90/c4ccaebc385b70a27a0596b09c8386ec5ebb69
+.git/objects/93/51a16953d3c2162f08b3eafdfbb55a8f099262
+.git/objects/9b/c911eb9f0cf257ec80d3dcd623a968ef335c16
+.git/objects/9c/d5d4ae3ed1b25e32abc3650ff89f1eb7d2d02d
+.git/objects/9d/9f2fc3a2f48a72403ebbb2013a4e274b33ac88
+.git/objects/9f/1fcbb2d62d645da41b63c5647a209aee304698
+.git/objects/9f/5b40ed4ace14cb8a6a2d6e3820a3f6c69068d1
+.git/objects/9f/82d3d1b348eb6a012fe5c35e6d62d3305e51a0
+.git/objects/a3/078c4b7a64b9aec568b5b5f7199961c9423d95
+.git/objects/a4/bcb0dd3d229aa40b5e2a52a361dffdccd6c44f
+.git/objects/a6/157b58c6055e0e8d859b2ec552731c95fb8ec0
+.git/objects/a9/5299323d549f6faf6ba027e8e8878605feab85
+.git/objects/aa/0136812504ca000f84a7f5af735f94359d8219
+.git/objects/b0/0e4191c7854f85db3c9f033fb781b7ad35d2cd
+.git/objects/bc/ecc6a9beb4b0eb573e4ad1518edbfbba4486ee
+.git/objects/bf/3a4c3b28acf7ce3e986aff4dca45a653116387
+.git/objects/c4/eaf7f70539fc6e0946e9d2ac05bb226f045cf5
+.git/objects/c6/64aa19b3bc0e3eb4d7f83b778e21cf8b12a4e0
+.git/objects/c6/f20ddd4430d42c19d0ca4bb6da4b82aeb4ceb7
+.git/objects/ce/573051bd4f174530ec977ae779dc6b471b99ba
+.git/objects/d4/ee528baed7c649871b5140f6b57d867f7b769f
+.git/objects/d7/86a4be87f65d2327d3bd53ed062152e9d13587
+.git/objects/d7/a8e28be54fee941da8521854539f7d39cc3ca9
+.git/objects/dd/ec551a489245a220a3ece5710897da8ea4cdec
+.git/objects/de/144a96399540b28ab72c7d21bc7403ad87c341
+.git/objects/e0/fc063eff73202047918ca80742494aaf6281d5
+.git/objects/e8/94a3922cb6bd3ada87d5e3660d44beab5ef246
+.git/objects/f0/29dffd57d062a4412aa1d3f708be26cddb4a23
+.git/objects/f1/e984d8721bff0d28917eeaa3ff1c8b039dae79
+.git/objects/f1/fa78a7a0110e8dc403dca34f860f979121a107
+.git/objects/fe/d72594dd071eb8e95e4175e3abb7a47cc6c3aa
+.git/refs/heads/main
 .xenv
 Untitled-1.copilotmd
 VARSAYILANVSCODEPROFIL.code-profile
 __pycache__/configmodule.cpython-312.pyc
 aaaxxxaaaa
-birlesikdosyalar/zapata_m6h_analysis_log_20250405_061543.txt
-birlesikdosyalar/zapata_m6h_cevresel.txt
 birlesikdosyalar/zapata_m6h_detailed_analysis.csv
-birlesikdosyalar/zapata_m6h_istatistik.txt
 birlesikdosyalar/zapata_m6h_tumfonk.tablo.csv
 birlesikdosyalarx2/birlesik.txt
 birlesikdosyalarx2/birlesik.txt_yorumlu.py
@@ -44,79 +140,59 @@ birlesikdosyalarx3/zapata_m6h_istatistik.txt
 birlesikdosyalarx3/zapata_m6h_karmasiklik_raporu.txt
 birlesikdosyalarx3/zapata_m6h_toplu_fonksiyonlar_kod_kutuphanesi.txt
 birlesikdosyalarx3/zapata_m6h_tumfonk.tablo.csv
-birlesikdosyalarx6.07x1/zapata_m6h_alfabetik.txt
-birlesikdosyalarx6.07x1/zapata_m6h_analysis_log_20250405_060131.txt
-birlesikdosyalarx6.07x1/zapata_m6h_analysis_log_20250405_060150.txt
-birlesikdosyalarx6.07x1/zapata_m6h_cevresel.txt
-birlesikdosyalarx6.07x1/zapata_m6h_combined_content.txt_yorumlu.py
-birlesikdosyalarx6.07x1/zapata_m6h_combined_content.txt_yorumlu.txt
-birlesikdosyalarx6.07x1/zapata_m6h_combined_content.txt_yorumsuz.py
-birlesikdosyalarx6.07x1/zapata_m6h_combined_content.txt_yorumsuz.txt
 birlesikdosyalarx6.07x1/zapata_m6h_detailed_analysis.csv
-birlesikdosyalarx6.07x1/zapata_m6h_file_list.txt
-birlesikdosyalarx6.07x1/zapata_m6h_fonksiyon_detay.txt
-birlesikdosyalarx6.07x1/zapata_m6h_fonksiyon_kutuphanesi.txt
-birlesikdosyalarx6.07x1/zapata_m6h_gereksinim.txt
-birlesikdosyalarx6.07x1/zapata_m6h_hata_raporu.txt
-birlesikdosyalarx6.07x1/zapata_m6h_istatistik.txt
-birlesikdosyalarx6.07x1/zapata_m6h_karmasiklik_raporu.txt
-birlesikdosyalarx6.07x1/zapata_m6h_toplu_fonksiyonlar_kod_kutuphanesi.txt
 birlesikdosyalarx6.07x1/zapata_m6h_tumfonk.tablo.csv
-birlesikdosyalarxx/alfabetik_modul_listesi.txt
-birlesikdosyalarxx/analysis_log_20250401_060848.txt
-birlesikdosyalarxx/analysis_log_20250401_060916.txt
-birlesikdosyalarxx/cevresel_degiskenler.txt
-birlesikdosyalarxx/combined_content.txt
-birlesikdosyalarxx/combined_content.txt_yorumlu.py
-birlesikdosyalarxx/combined_content.txt_yorumsuz.py
-birlesikdosyalarxx/file_list.txt
-birlesikdosyalarxx/file_list.txt.py
-birlesikdosyalarxx/fonksiyon_icerik.txt
-birlesikdosyalarxx/modul_istatistik.txt
-birlesikdosyalarxx/moduller_tablo.csv
-birlesikdosyalarxx/requirements.txt
-birlesikdosyalarxx/tumfonk.tablo.csv
-birlesikdosyalarxx/zapata_m6h.alfabetik.txt
-birlesikdosyalarxx/zapata_m6h.cevresel.txt
-birlesikdosyalarxx/zapata_m6h.gereksinim.txt
-birlesikdosyalarxx/zapata_m6h_alfabetik.txt
-birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_193239.txt
-birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_193433.txt
-birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_195036.txt
-birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_195124.txt
-birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_210813.txt
-birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_211135.txt
-birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_211800.txt
-birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_215021.txt
-birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_223426.txt
-birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_224146.txt
-birlesikdosyalarxx/zapata_m6h_analysis_log_20250402_232227.txt
-birlesikdosyalarxx/zapata_m6h_analysis_log_20250402_233837.txt
-birlesikdosyalarxx/zapata_m6h_analysis_log_20250402_234752.txt
-birlesikdosyalarxx/zapata_m6h_cevresel.txt
-birlesikdosyalarxx/zapata_m6h_combined_content.txt_yorumlu.py
-birlesikdosyalarxx/zapata_m6h_combined_content.txt_yorumlu.txt
-birlesikdosyalarxx/zapata_m6h_combined_content.txt_yorumsuz.py
-birlesikdosyalarxx/zapata_m6h_combined_content.txt_yorumsuz.txt
-birlesikdosyalarxx/zapata_m6h_file_list.txt
-birlesikdosyalarxx/zapata_m6h_fonksiyon_detay.txt
-birlesikdosyalarxx/zapata_m6h_fonksiyon_kutuphanesi.txt
-birlesikdosyalarxx/zapata_m6h_gereksinim.txt
-birlesikdosyalarxx/zapata_m6h_hata_raporu.txt
-birlesikdosyalarxx/zapata_m6h_istatistik.txt
-birlesikdosyalarxx/zapata_m6h_karmasiklik_raporu.txt
-birlesikdosyalarxx/zapata_m6h_toplu_fonksiyonlar_kod_kutuphanesi.txt
-birlesikdosyalarxx/zapata_m6h_zapata.txt_yorumlu.py
-birlesikdosyalarxx/zapata_m6h_zapata.txt_yorumlu.txt
-birlesikdosyalarxx/zapata_m6h_zapata.txt_yorumsuz.py
-birlesikdosyalarxx/zapata_m6h_zapata.txt_yorumsuz.txt
 cikti_env/.envx
 patterns.yaml
-readme.md
-retrieve_and_rerank_parallel.py
-retrieve_with_faiss.py
 scanner_config.yaml
-test_env_bulucu3.py
+z birlesikdosyalarxx/alfabetik_modul_listesi.txt
+z birlesikdosyalarxx/analysis_log_20250401_060848.txt
+z birlesikdosyalarxx/analysis_log_20250401_060916.txt
+z birlesikdosyalarxx/cevresel_degiskenler.txt
+z birlesikdosyalarxx/combined_content.txt
+z birlesikdosyalarxx/combined_content.txt_yorumlu.py
+z birlesikdosyalarxx/combined_content.txt_yorumsuz.py
+z birlesikdosyalarxx/file_list.txt
+z birlesikdosyalarxx/file_list.txt.py
+z birlesikdosyalarxx/fonksiyon_icerik.txt
+z birlesikdosyalarxx/modul_istatistik.txt
+z birlesikdosyalarxx/moduller_tablo.csv
+z birlesikdosyalarxx/requirements.txt
+z birlesikdosyalarxx/tumfonk.tablo.csv
+z birlesikdosyalarxx/zapata_m6h.alfabetik.txt
+z birlesikdosyalarxx/zapata_m6h.cevresel.txt
+z birlesikdosyalarxx/zapata_m6h.gereksinim.txt
+z birlesikdosyalarxx/zapata_m6h_alfabetik.txt
+z birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_193239.txt
+z birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_193433.txt
+z birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_195036.txt
+z birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_195124.txt
+z birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_210813.txt
+z birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_211135.txt
+z birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_211800.txt
+z birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_215021.txt
+z birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_223426.txt
+z birlesikdosyalarxx/zapata_m6h_analysis_log_20250401_224146.txt
+z birlesikdosyalarxx/zapata_m6h_analysis_log_20250402_232227.txt
+z birlesikdosyalarxx/zapata_m6h_analysis_log_20250402_233837.txt
+z birlesikdosyalarxx/zapata_m6h_analysis_log_20250402_234752.txt
+z birlesikdosyalarxx/zapata_m6h_cevresel.txt
+z birlesikdosyalarxx/zapata_m6h_combined_content.txt_yorumlu.py
+z birlesikdosyalarxx/zapata_m6h_combined_content.txt_yorumlu.txt
+z birlesikdosyalarxx/zapata_m6h_combined_content.txt_yorumsuz.py
+z birlesikdosyalarxx/zapata_m6h_combined_content.txt_yorumsuz.txt
+z birlesikdosyalarxx/zapata_m6h_file_list.txt
+z birlesikdosyalarxx/zapata_m6h_fonksiyon_detay.txt
+z birlesikdosyalarxx/zapata_m6h_fonksiyon_kutuphanesi.txt
+z birlesikdosyalarxx/zapata_m6h_gereksinim.txt
+z birlesikdosyalarxx/zapata_m6h_hata_raporu.txt
+z birlesikdosyalarxx/zapata_m6h_istatistik.txt
+z birlesikdosyalarxx/zapata_m6h_karmasiklik_raporu.txt
+z birlesikdosyalarxx/zapata_m6h_toplu_fonksiyonlar_kod_kutuphanesi.txt
+z birlesikdosyalarxx/zapata_m6h_zapata.txt_yorumlu.py
+z birlesikdosyalarxx/zapata_m6h_zapata.txt_yorumlu.txt
+z birlesikdosyalarxx/zapata_m6h_zapata.txt_yorumsuz.py
+z birlesikdosyalarxx/zapata_m6h_zapata.txt_yorumsuz.txt
 zapata_m6h-20250330T202131Z-001.zip
 zapata_m6h.code-workspace
 zapata_m6h/.db
@@ -238,4 +314,3 @@ zapata_m6h/zotero_extension.py
 zapata_m6h/zotero_integration.py
 zapata_m6h/zoteromodule.py
 zapata_m6h/çevresel.txt
-zapata_m6h_.txt

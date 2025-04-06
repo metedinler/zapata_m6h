@@ -3,6 +3,8 @@ Mind_Map_Visualizer.py
 alternativeembeddingmodule.py
 birlesikdosyalar/zapata_m6h_alfabetik.txt
 birlesikdosyalar/zapata_m6h_analysis_log_20250405_061534.txt
+birlesikdosyalar/zapata_m6h_analysis_log_20250405_061543.txt
+birlesikdosyalar/zapata_m6h_cevresel.txt
 birlesikdosyalar/zapata_m6h_combined_content.txt_yorumlu.py
 birlesikdosyalar/zapata_m6h_combined_content.txt_yorumlu.txt
 birlesikdosyalar/zapata_m6h_combined_content.txt_yorumsuz.py
@@ -12,8 +14,25 @@ birlesikdosyalar/zapata_m6h_fonksiyon_detay.txt
 birlesikdosyalar/zapata_m6h_fonksiyon_kutuphanesi.txt
 birlesikdosyalar/zapata_m6h_gereksinim.txt
 birlesikdosyalar/zapata_m6h_hata_raporu.txt
+birlesikdosyalar/zapata_m6h_istatistik.txt
 birlesikdosyalar/zapata_m6h_karmasiklik_raporu.txt
 birlesikdosyalar/zapata_m6h_toplu_fonksiyonlar_kod_kutuphanesi.txt
+birlesikdosyalarx6.07x1/zapata_m6h_alfabetik.txt
+birlesikdosyalarx6.07x1/zapata_m6h_analysis_log_20250405_060131.txt
+birlesikdosyalarx6.07x1/zapata_m6h_analysis_log_20250405_060150.txt
+birlesikdosyalarx6.07x1/zapata_m6h_cevresel.txt
+birlesikdosyalarx6.07x1/zapata_m6h_combined_content.txt_yorumlu.py
+birlesikdosyalarx6.07x1/zapata_m6h_combined_content.txt_yorumlu.txt
+birlesikdosyalarx6.07x1/zapata_m6h_combined_content.txt_yorumsuz.py
+birlesikdosyalarx6.07x1/zapata_m6h_combined_content.txt_yorumsuz.txt
+birlesikdosyalarx6.07x1/zapata_m6h_file_list.txt
+birlesikdosyalarx6.07x1/zapata_m6h_fonksiyon_detay.txt
+birlesikdosyalarx6.07x1/zapata_m6h_fonksiyon_kutuphanesi.txt
+birlesikdosyalarx6.07x1/zapata_m6h_gereksinim.txt
+birlesikdosyalarx6.07x1/zapata_m6h_hata_raporu.txt
+birlesikdosyalarx6.07x1/zapata_m6h_istatistik.txt
+birlesikdosyalarx6.07x1/zapata_m6h_karmasiklik_raporu.txt
+birlesikdosyalarx6.07x1/zapata_m6h_toplu_fonksiyonlar_kod_kutuphanesi.txt
 cikti_env/cevresel.txt
 cikti_env/env_hata.txt
 citationmappingmodule.py
@@ -22,6 +41,7 @@ configmodule.py
 d3js_visualizer.py
 detayli_calisma.md
 document_parser.py
+dosya_listesi.txt
 embeddingmodule.py
 env_bulucu3.py
 envbulucu.py
@@ -45,12 +65,15 @@ pdfprocessing.py
 process_manager.py
 query_expansion.py
 rag_pipeline.py
+readme.md
 rediscache.py
 redisqueue.py
 requiments.txt
 reranking_module.py
 rest_api.py
 retrieval_reranker.py
+retrieve_and_rerank_parallel.py
+retrieve_with_faiss.py
 retrieve_with_reranking.py
 retriever_integration.py
 robustembeddingmodule.py
@@ -58,6 +81,7 @@ scientific_mapping.py
 search_engine.py
 sqlite_storage.py
 sync_faiss_chromadb.py
+test_env_bulucu3.py
 test_suite(ilk kod).py
 test_suite.py
 text_processing.py
@@ -65,6 +89,7 @@ training_monitor.py
 veri_gorsellestirme.py
 veri_isleme.py
 yapay_zeka_finetuning.py
+zapata_m6h_.txt
 zotero_extension.py
 zotero_integration.py
 zoteromodule.py

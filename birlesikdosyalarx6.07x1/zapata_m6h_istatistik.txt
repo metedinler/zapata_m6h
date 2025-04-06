@@ -1,0 +1,16 @@
+# zapata_m6h İstatistikleri
+
+Analiz edilen Python dosyası sayısı: 47
+Total Lines: 144.0 (Toplam kod satırı sayısı)
+Yorum satırı oranı: 1407.5% (Yorum oranı yüksekse kod daha okunabilir olur)
+Class Count: 1.0 (Sınıf sayısı, kodun nesne yönelimli yapısını gösterir)
+Func Count: 0.4 (Fonksiyon sayısı, kodun modülerliğini belirtir)
+Import Count: 8.0 (Dış bağımlılıkların sayısı)
+Try Blocks: 0.0 (Hata yönetimi yoğunluğu)
+Complexity: 1.2 (Düşük karmaşıklık daha az hata riski demektir)
+Kod tekrar oranı: 262.6% (Kod tekrarı az olmalı, bakım zorlaşır)
+Bakım indeksi: 4243.0 (Yüksek değer bakım kolaylığı sağlar)
+Test kapsamı: 500.0% (Test kapsayıcılığı yüksekse güvenilirlik artar)
+
+# Kod Optimizasyon Önerileri
+- Kod tekrarı var, ortak fonksiyonlar oluşturulabilir.
