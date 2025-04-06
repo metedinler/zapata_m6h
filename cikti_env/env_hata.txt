@@ -1,0 +1,26 @@
+[2025-04-05 06:15:41] parse_ast: C:/Users/mete/Zotero/zotasistan/zapata_m6h\evaluation_metrics.py: invalid syntax. Perhaps you forgot a comma? (<unknown>, line 159)
+Traceback (most recent call last):
+  File "C:\Users\mete\Zotero\zotasistan\env_olusturucu\env_olusturucu\env_olusturucu12.py", line 245, in _cached_ast_parse
+    tree = ast.parse(content)
+  File "C:\Users\mete\anaconda3\envs\.env\Lib\ast.py", line 54, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "<unknown>", line 159
+    (Değerlendirme Metrikleri Modülü)
+     ^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+--------------------------------------------------
+[2025-04-05 06:15:41] parse_ast: C:/Users/mete/Zotero/zotasistan/zapata_m6h\filesavemodule.py: invalid character '🚀' (U+1F680) (<unknown>, line 1)
+Traceback (most recent call last):
+  File "C:\Users\mete\Zotero\zotasistan\env_olusturucu\env_olusturucu\env_olusturucu12.py", line 245, in _cached_ast_parse
+    tree = ast.parse(content)
+  File "C:\Users\mete\anaconda3\envs\.env\Lib\ast.py", line 54, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "<unknown>", line 1
+    🚀 **Evet! `filesavemodule.py` modülü eksiksiz olarak hazır.**  
+    ^
+SyntaxError: invalid character '🚀' (U+1F680)
+
+--------------------------------------------------

@@ -1,0 +1,238 @@
+Kod Karmaşıklık Raporu
+=====================
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\alternativeembeddingmodule.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 93.1
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\citationmappingmodule.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 77.0
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\clustering_module.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 89.4
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\configmodule.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 88.0
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\d3js_visualizer.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 94.3
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\document_parser.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 85.7
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\embeddingmodule.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 93.9
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\error_logging.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 88.8
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\faiss_integration.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 89.5
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\fetch_top_k_results.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 90.9
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\FineTuning.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.50
+  Bakım indeksi: 84.5
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimindmap.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 1.00
+  Bakım indeksi: 95.0
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimodule.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 94.2
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\helpermodule.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 90.5
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\layout_analysis.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 89.9
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\main.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 91.3
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\mindmap_visualizer.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 97.3
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\Mind_Map_Visualizer.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 111.4
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\multi_source_search.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 85.4
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfkutuphane.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 83.8
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfprocessing.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 91.4
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\process_manager.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 95.2
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\query_expansion.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 92.8
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\rag_pipeline.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 98.4
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\rediscache.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 80.6
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\redisqueue.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 81.0
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\reranking_module.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 94.8
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\rest_api.py
+  Toplam karmaşıklık: 6.0
+  Fonksiyon başına ortalama: 0.55
+  Bakım indeksi: 81.5
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieval_reranker.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 92.9
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\retriever_integration.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 101.7
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_and_rerank_parallel.py
+  Toplam karmaşıklık: 2.0
+  Fonksiyon başına ortalama: 2.00
+  Bakım indeksi: 104.3
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_faiss.py
+  Toplam karmaşıklık: 2.0
+  Fonksiyon başına ortalama: 2.00
+  Bakım indeksi: 101.8
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_reranking.py
+  Toplam karmaşıklık: 4.0
+  Fonksiyon başına ortalama: 1.33
+  Bakım indeksi: 81.7
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\robustembeddingmodule.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 90.0
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\scientific_mapping.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 87.2
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\search_engine.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 87.8
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\sqlite_storage.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 81.7
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\sync_faiss_chromadb.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 90.8
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\test_suite.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 86.7
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\text_processing.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 94.0
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\training_monitor.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 94.8
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_gorsellestirme.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 89.0
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_isleme.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 88.8
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\yapay_zeka_finetuning.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.50
+  Bakım indeksi: 65.5
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\zoteromodule.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 92.2
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_extension.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 92.2
+
+Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_integration.py
+  Toplam karmaşıklık: 1.0
+  Fonksiyon başına ortalama: 0.00
+  Bakım indeksi: 90.1
+

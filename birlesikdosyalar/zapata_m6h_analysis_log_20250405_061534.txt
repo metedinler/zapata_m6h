@@ -1,0 +1,322 @@
+2025-04-05 06:15:34,198 - INFO - Loglama başlatıldı: C:/Users/mete/Zotero/zotasistan/zapata_m6h\birlesikdosyalar\zapata_m6h_analysis_log_20250405_061534.txt
+2025-04-05 06:15:34,201 - INFO - İşlenecek 49 dosya bulundu
+2025-04-05 06:15:34,202 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\alternativeembeddingmodule.py analiz ediliyor
+2025-04-05 06:15:34,204 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\alternativeembeddingmodule.py başarıyla analiz edildi
+2025-04-05 06:15:34,205 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\alternativeembeddingmodule.py kalite analizi yapılıyor
+2025-04-05 06:15:34,206 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\alternativeembeddingmodule.py kalite analizi tamamlandı
+2025-04-05 06:15:34,229 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\alternativeembeddingmodule.py için kodlama: Windows-1254 (güven: 56.39%)
+2025-04-05 06:15:34,231 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\alternativeembeddingmodule.py başarıyla işlendi
+2025-04-05 06:15:34,232 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\citationmappingmodule.py analiz ediliyor
+2025-04-05 06:15:34,235 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\citationmappingmodule.py başarıyla analiz edildi
+2025-04-05 06:15:34,236 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\citationmappingmodule.py kalite analizi yapılıyor
+2025-04-05 06:15:34,240 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\citationmappingmodule.py kalite analizi tamamlandı
+2025-04-05 06:15:34,292 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\citationmappingmodule.py için kodlama: Windows-1254 (güven: 55.84%)
+2025-04-05 06:15:34,293 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\citationmappingmodule.py başarıyla işlendi
+2025-04-05 06:15:34,293 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\clustering_module.py analiz ediliyor
+2025-04-05 06:15:34,295 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\clustering_module.py başarıyla analiz edildi
+2025-04-05 06:15:34,296 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\clustering_module.py kalite analizi yapılıyor
+2025-04-05 06:15:34,298 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\clustering_module.py kalite analizi tamamlandı
+2025-04-05 06:15:34,322 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\clustering_module.py için kodlama: Windows-1254 (güven: 52.60%)
+2025-04-05 06:15:34,323 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\clustering_module.py başarıyla işlendi
+2025-04-05 06:15:34,323 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\configmodule.py analiz ediliyor
+2025-04-05 06:15:34,325 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\configmodule.py başarıyla analiz edildi
+2025-04-05 06:15:34,326 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\configmodule.py kalite analizi yapılıyor
+2025-04-05 06:15:34,327 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\configmodule.py kalite analizi tamamlandı
+2025-04-05 06:15:34,360 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\configmodule.py için kodlama: Windows-1252 (güven: 43.23%)
+2025-04-05 06:15:34,361 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\configmodule.py başarıyla işlendi
+2025-04-05 06:15:34,361 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\d3js_visualizer.py analiz ediliyor
+2025-04-05 06:15:34,363 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\d3js_visualizer.py başarıyla analiz edildi
+2025-04-05 06:15:34,363 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\d3js_visualizer.py kalite analizi yapılıyor
+2025-04-05 06:15:34,364 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\d3js_visualizer.py kalite analizi tamamlandı
+2025-04-05 06:15:34,370 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\d3js_visualizer.py için kodlama: utf-8 (güven: 99.00%)
+2025-04-05 06:15:34,371 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\d3js_visualizer.py başarıyla işlendi
+2025-04-05 06:15:34,371 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\document_parser.py analiz ediliyor
+2025-04-05 06:15:34,373 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\document_parser.py başarıyla analiz edildi
+2025-04-05 06:15:34,373 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\document_parser.py kalite analizi yapılıyor
+2025-04-05 06:15:34,375 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\document_parser.py kalite analizi tamamlandı
+2025-04-05 06:15:34,401 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\document_parser.py için kodlama: Windows-1254 (güven: 58.44%)
+2025-04-05 06:15:34,402 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\document_parser.py başarıyla işlendi
+2025-04-05 06:15:34,402 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\embeddingmodule.py analiz ediliyor
+2025-04-05 06:15:34,404 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\embeddingmodule.py başarıyla analiz edildi
+2025-04-05 06:15:34,405 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\embeddingmodule.py kalite analizi yapılıyor
+2025-04-05 06:15:34,406 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\embeddingmodule.py kalite analizi tamamlandı
+2025-04-05 06:15:34,427 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\embeddingmodule.py için kodlama: Windows-1254 (güven: 56.06%)
+2025-04-05 06:15:34,428 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\embeddingmodule.py başarıyla işlendi
+2025-04-05 06:15:34,428 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\error_logging.py analiz ediliyor
+2025-04-05 06:15:34,430 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\error_logging.py başarıyla analiz edildi
+2025-04-05 06:15:34,431 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\error_logging.py kalite analizi yapılıyor
+2025-04-05 06:15:34,434 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\error_logging.py kalite analizi tamamlandı
+2025-04-05 06:15:34,440 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\error_logging.py için kodlama: utf-8 (güven: 99.00%)
+2025-04-05 06:15:34,440 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\error_logging.py başarıyla işlendi
+2025-04-05 06:15:34,441 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\evaluation_metrics.py analiz ediliyor
+2025-04-05 06:15:34,447 - ERROR - C:/Users/mete/Zotero/zotasistan/zapata_m6h\evaluation_metrics.py sözdizimi hatası: invalid syntax. Perhaps you forgot a comma? (<unknown>, line 159)
+2025-04-05 06:15:34,448 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\evaluation_metrics.py kalite analizi yapılıyor
+2025-04-05 06:15:34,451 - ERROR - C:/Users/mete/Zotero/zotasistan/zapata_m6h\evaluation_metrics.py sözdizimi hatası: invalid syntax. Perhaps you forgot a comma? (<unknown>, line 159)
+2025-04-05 06:15:34,470 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\evaluation_metrics.py için kodlama: Windows-1254 (güven: 48.48%)
+2025-04-05 06:15:34,471 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\evaluation_metrics.py başarıyla işlendi
+2025-04-05 06:15:34,472 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\faiss_integration.py analiz ediliyor
+2025-04-05 06:15:34,473 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\faiss_integration.py başarıyla analiz edildi
+2025-04-05 06:15:34,474 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\faiss_integration.py kalite analizi yapılıyor
+2025-04-05 06:15:34,476 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\faiss_integration.py kalite analizi tamamlandı
+2025-04-05 06:15:34,497 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\faiss_integration.py için kodlama: Windows-1254 (güven: 55.14%)
+2025-04-05 06:15:34,499 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\faiss_integration.py başarıyla işlendi
+2025-04-05 06:15:34,499 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\fetch_top_k_results.py analiz ediliyor
+2025-04-05 06:15:34,501 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\fetch_top_k_results.py başarıyla analiz edildi
+2025-04-05 06:15:34,502 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\fetch_top_k_results.py kalite analizi yapılıyor
+2025-04-05 06:15:34,503 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\fetch_top_k_results.py kalite analizi tamamlandı
+2025-04-05 06:15:34,522 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\fetch_top_k_results.py için kodlama: Windows-1254 (güven: 54.15%)
+2025-04-05 06:15:34,523 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\fetch_top_k_results.py başarıyla işlendi
+2025-04-05 06:15:34,524 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\filesavemodule.py analiz ediliyor
+2025-04-05 06:15:34,526 - ERROR - C:/Users/mete/Zotero/zotasistan/zapata_m6h\filesavemodule.py sözdizimi hatası: invalid character '🚀' (U+1F680) (<unknown>, line 1)
+2025-04-05 06:15:34,526 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\filesavemodule.py kalite analizi yapılıyor
+2025-04-05 06:15:34,527 - ERROR - C:/Users/mete/Zotero/zotasistan/zapata_m6h\filesavemodule.py sözdizimi hatası: invalid character '🚀' (U+1F680) (<unknown>, line 1)
+2025-04-05 06:15:34,548 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\filesavemodule.py için kodlama: Windows-1254 (güven: 55.77%)
+2025-04-05 06:15:34,549 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\filesavemodule.py başarıyla işlendi
+2025-04-05 06:15:34,549 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\FineTuning.py analiz ediliyor
+2025-04-05 06:15:34,552 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\FineTuning.py başarıyla analiz edildi
+2025-04-05 06:15:34,552 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\FineTuning.py kalite analizi yapılıyor
+2025-04-05 06:15:34,555 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\FineTuning.py kalite analizi tamamlandı
+2025-04-05 06:15:34,582 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\FineTuning.py için kodlama: MacRoman (güven: 54.39%)
+2025-04-05 06:15:34,584 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\FineTuning.py başarıyla işlendi
+2025-04-05 06:15:34,584 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimindmap.py analiz ediliyor
+2025-04-05 06:15:34,586 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimindmap.py başarıyla analiz edildi
+2025-04-05 06:15:34,587 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimindmap.py kalite analizi yapılıyor
+2025-04-05 06:15:34,588 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimindmap.py kalite analizi tamamlandı
+2025-04-05 06:15:34,608 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimindmap.py için kodlama: Windows-1254 (güven: 63.94%)
+2025-04-05 06:15:34,608 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimindmap.py başarıyla işlendi
+2025-04-05 06:15:34,609 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimodule.py analiz ediliyor
+2025-04-05 06:15:34,610 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimodule.py başarıyla analiz edildi
+2025-04-05 06:15:34,611 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimodule.py kalite analizi yapılıyor
+2025-04-05 06:15:34,612 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimodule.py kalite analizi tamamlandı
+2025-04-05 06:15:34,629 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimodule.py için kodlama: Windows-1254 (güven: 57.59%)
+2025-04-05 06:15:34,629 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimodule.py başarıyla işlendi
+2025-04-05 06:15:34,630 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\helpermodule.py analiz ediliyor
+2025-04-05 06:15:34,632 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\helpermodule.py başarıyla analiz edildi
+2025-04-05 06:15:34,633 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\helpermodule.py kalite analizi yapılıyor
+2025-04-05 06:15:34,635 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\helpermodule.py kalite analizi tamamlandı
+2025-04-05 06:15:34,657 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\helpermodule.py için kodlama: Windows-1254 (güven: 49.87%)
+2025-04-05 06:15:34,658 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\helpermodule.py başarıyla işlendi
+2025-04-05 06:15:34,658 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\layout_analysis.py analiz ediliyor
+2025-04-05 06:15:34,660 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\layout_analysis.py başarıyla analiz edildi
+2025-04-05 06:15:34,660 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\layout_analysis.py kalite analizi yapılıyor
+2025-04-05 06:15:34,662 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\layout_analysis.py kalite analizi tamamlandı
+2025-04-05 06:15:34,685 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\layout_analysis.py için kodlama: Windows-1254 (güven: 55.39%)
+2025-04-05 06:15:34,686 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\layout_analysis.py başarıyla işlendi
+2025-04-05 06:15:34,686 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\main.py analiz ediliyor
+2025-04-05 06:15:34,688 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\main.py başarıyla analiz edildi
+2025-04-05 06:15:34,688 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\main.py kalite analizi yapılıyor
+2025-04-05 06:15:34,690 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\main.py kalite analizi tamamlandı
+2025-04-05 06:15:34,710 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\main.py için kodlama: Windows-1254 (güven: 54.45%)
+2025-04-05 06:15:34,711 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\main.py başarıyla işlendi
+2025-04-05 06:15:34,712 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\mindmap_visualizer.py analiz ediliyor
+2025-04-05 06:15:34,714 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\mindmap_visualizer.py başarıyla analiz edildi
+2025-04-05 06:15:34,714 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\mindmap_visualizer.py kalite analizi yapılıyor
+2025-04-05 06:15:34,716 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\mindmap_visualizer.py kalite analizi tamamlandı
+2025-04-05 06:15:34,720 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\mindmap_visualizer.py için kodlama: utf-8 (güven: 99.00%)
+2025-04-05 06:15:34,721 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\mindmap_visualizer.py başarıyla işlendi
+2025-04-05 06:15:34,721 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\Mind_Map_Visualizer.py analiz ediliyor
+2025-04-05 06:15:34,722 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\Mind_Map_Visualizer.py başarıyla analiz edildi
+2025-04-05 06:15:34,723 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\Mind_Map_Visualizer.py kalite analizi yapılıyor
+2025-04-05 06:15:34,723 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\Mind_Map_Visualizer.py kalite analizi tamamlandı
+2025-04-05 06:15:34,725 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\Mind_Map_Visualizer.py için kodlama: utf-8 (güven: 99.00%)
+2025-04-05 06:15:34,725 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\Mind_Map_Visualizer.py başarıyla işlendi
+2025-04-05 06:15:34,726 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\multi_source_search.py analiz ediliyor
+2025-04-05 06:15:34,728 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\multi_source_search.py başarıyla analiz edildi
+2025-04-05 06:15:34,728 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\multi_source_search.py kalite analizi yapılıyor
+2025-04-05 06:15:34,730 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\multi_source_search.py kalite analizi tamamlandı
+2025-04-05 06:15:34,754 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\multi_source_search.py için kodlama: Windows-1254 (güven: 57.41%)
+2025-04-05 06:15:34,755 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\multi_source_search.py başarıyla işlendi
+2025-04-05 06:15:34,756 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfkutuphane.py analiz ediliyor
+2025-04-05 06:15:34,759 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfkutuphane.py başarıyla analiz edildi
+2025-04-05 06:15:34,759 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfkutuphane.py kalite analizi yapılıyor
+2025-04-05 06:15:34,762 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfkutuphane.py kalite analizi tamamlandı
+2025-04-05 06:15:34,770 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfkutuphane.py için kodlama: utf-8 (güven: 99.00%)
+2025-04-05 06:15:34,771 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfkutuphane.py başarıyla işlendi
+2025-04-05 06:15:34,771 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfprocessing.py analiz ediliyor
+2025-04-05 06:15:34,773 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfprocessing.py başarıyla analiz edildi
+2025-04-05 06:15:34,773 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfprocessing.py kalite analizi yapılıyor
+2025-04-05 06:15:34,774 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfprocessing.py kalite analizi tamamlandı
+2025-04-05 06:15:34,794 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfprocessing.py için kodlama: Windows-1254 (güven: 50.75%)
+2025-04-05 06:15:34,794 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfprocessing.py başarıyla işlendi
+2025-04-05 06:15:34,795 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\process_manager.py analiz ediliyor
+2025-04-05 06:15:34,796 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\process_manager.py başarıyla analiz edildi
+2025-04-05 06:15:34,797 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\process_manager.py kalite analizi yapılıyor
+2025-04-05 06:15:34,799 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\process_manager.py kalite analizi tamamlandı
+2025-04-05 06:15:34,819 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\process_manager.py için kodlama: Windows-1254 (güven: 54.21%)
+2025-04-05 06:15:34,820 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\process_manager.py başarıyla işlendi
+2025-04-05 06:15:34,820 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\query_expansion.py analiz ediliyor
+2025-04-05 06:15:34,822 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\query_expansion.py başarıyla analiz edildi
+2025-04-05 06:15:34,822 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\query_expansion.py kalite analizi yapılıyor
+2025-04-05 06:15:34,823 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\query_expansion.py kalite analizi tamamlandı
+2025-04-05 06:15:34,836 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\query_expansion.py için kodlama: Windows-1254 (güven: 52.72%)
+2025-04-05 06:15:34,837 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\query_expansion.py başarıyla işlendi
+2025-04-05 06:15:34,837 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rag_pipeline.py analiz ediliyor
+2025-04-05 06:15:34,839 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rag_pipeline.py başarıyla analiz edildi
+2025-04-05 06:15:34,839 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rag_pipeline.py kalite analizi yapılıyor
+2025-04-05 06:15:34,840 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rag_pipeline.py kalite analizi tamamlandı
+2025-04-05 06:15:34,856 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rag_pipeline.py için kodlama: Windows-1254 (güven: 58.56%)
+2025-04-05 06:15:34,857 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rag_pipeline.py başarıyla işlendi
+2025-04-05 06:15:34,857 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rediscache.py analiz ediliyor
+2025-04-05 06:15:34,860 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rediscache.py başarıyla analiz edildi
+2025-04-05 06:15:34,861 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rediscache.py kalite analizi yapılıyor
+2025-04-05 06:15:34,867 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rediscache.py kalite analizi tamamlandı
+2025-04-05 06:15:34,905 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rediscache.py için kodlama: Windows-1254 (güven: 57.69%)
+2025-04-05 06:15:34,906 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rediscache.py başarıyla işlendi
+2025-04-05 06:15:34,906 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\redisqueue.py analiz ediliyor
+2025-04-05 06:15:34,909 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\redisqueue.py başarıyla analiz edildi
+2025-04-05 06:15:34,909 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\redisqueue.py kalite analizi yapılıyor
+2025-04-05 06:15:34,911 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\redisqueue.py kalite analizi tamamlandı
+2025-04-05 06:15:34,941 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\redisqueue.py için kodlama: Windows-1254 (güven: 58.48%)
+2025-04-05 06:15:34,942 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\redisqueue.py başarıyla işlendi
+2025-04-05 06:15:34,942 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\reranking_module.py analiz ediliyor
+2025-04-05 06:15:34,944 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\reranking_module.py başarıyla analiz edildi
+2025-04-05 06:15:34,944 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\reranking_module.py kalite analizi yapılıyor
+2025-04-05 06:15:34,945 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\reranking_module.py kalite analizi tamamlandı
+2025-04-05 06:15:34,969 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\reranking_module.py için kodlama: Windows-1254 (güven: 58.97%)
+2025-04-05 06:15:34,970 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\reranking_module.py başarıyla işlendi
+2025-04-05 06:15:34,970 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rest_api.py analiz ediliyor
+2025-04-05 06:15:34,972 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rest_api.py başarıyla analiz edildi
+2025-04-05 06:15:34,973 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rest_api.py kalite analizi yapılıyor
+2025-04-05 06:15:34,974 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rest_api.py kalite analizi tamamlandı
+2025-04-05 06:15:34,996 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rest_api.py için kodlama: Windows-1254 (güven: 57.32%)
+2025-04-05 06:15:34,997 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\rest_api.py başarıyla işlendi
+2025-04-05 06:15:34,998 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieval_reranker.py analiz ediliyor
+2025-04-05 06:15:35,001 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieval_reranker.py başarıyla analiz edildi
+2025-04-05 06:15:35,001 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieval_reranker.py kalite analizi yapılıyor
+2025-04-05 06:15:35,003 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieval_reranker.py kalite analizi tamamlandı
+2025-04-05 06:15:35,023 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieval_reranker.py için kodlama: Windows-1254 (güven: 59.18%)
+2025-04-05 06:15:35,024 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieval_reranker.py başarıyla işlendi
+2025-04-05 06:15:35,024 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retriever_integration.py analiz ediliyor
+2025-04-05 06:15:35,025 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retriever_integration.py başarıyla analiz edildi
+2025-04-05 06:15:35,026 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retriever_integration.py kalite analizi yapılıyor
+2025-04-05 06:15:35,027 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retriever_integration.py kalite analizi tamamlandı
+2025-04-05 06:15:35,039 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retriever_integration.py için kodlama: Windows-1254 (güven: 57.24%)
+2025-04-05 06:15:35,040 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retriever_integration.py başarıyla işlendi
+2025-04-05 06:15:35,041 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_and_rerank_parallel.py analiz ediliyor
+2025-04-05 06:15:35,042 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_and_rerank_parallel.py başarıyla analiz edildi
+2025-04-05 06:15:35,042 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_and_rerank_parallel.py kalite analizi yapılıyor
+2025-04-05 06:15:35,043 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_and_rerank_parallel.py kalite analizi tamamlandı
+2025-04-05 06:15:35,044 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_and_rerank_parallel.py için kodlama: utf-8 (güven: 99.00%)
+2025-04-05 06:15:35,045 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_and_rerank_parallel.py başarıyla işlendi
+2025-04-05 06:15:35,045 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_faiss.py analiz ediliyor
+2025-04-05 06:15:35,046 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_faiss.py başarıyla analiz edildi
+2025-04-05 06:15:35,046 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_faiss.py kalite analizi yapılıyor
+2025-04-05 06:15:35,048 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_faiss.py kalite analizi tamamlandı
+2025-04-05 06:15:35,050 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_faiss.py için kodlama: utf-8 (güven: 99.00%)
+2025-04-05 06:15:35,050 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_faiss.py başarıyla işlendi
+2025-04-05 06:15:35,051 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_reranking.py analiz ediliyor
+2025-04-05 06:15:35,052 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_reranking.py başarıyla analiz edildi
+2025-04-05 06:15:35,052 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_reranking.py kalite analizi yapılıyor
+2025-04-05 06:15:35,054 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_reranking.py kalite analizi tamamlandı
+2025-04-05 06:15:35,057 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_reranking.py için kodlama: utf-8 (güven: 99.00%)
+2025-04-05 06:15:35,058 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_reranking.py başarıyla işlendi
+2025-04-05 06:15:35,058 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\robustembeddingmodule.py analiz ediliyor
+2025-04-05 06:15:35,059 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\robustembeddingmodule.py başarıyla analiz edildi
+2025-04-05 06:15:35,060 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\robustembeddingmodule.py kalite analizi yapılıyor
+2025-04-05 06:15:35,061 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\robustembeddingmodule.py kalite analizi tamamlandı
+2025-04-05 06:15:35,083 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\robustembeddingmodule.py için kodlama: Windows-1254 (güven: 56.13%)
+2025-04-05 06:15:35,084 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\robustembeddingmodule.py başarıyla işlendi
+2025-04-05 06:15:35,084 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\scientific_mapping.py analiz ediliyor
+2025-04-05 06:15:35,086 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\scientific_mapping.py başarıyla analiz edildi
+2025-04-05 06:15:35,087 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\scientific_mapping.py kalite analizi yapılıyor
+2025-04-05 06:15:35,088 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\scientific_mapping.py kalite analizi tamamlandı
+2025-04-05 06:15:35,111 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\scientific_mapping.py için kodlama: Windows-1254 (güven: 55.32%)
+2025-04-05 06:15:35,113 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\scientific_mapping.py başarıyla işlendi
+2025-04-05 06:15:35,113 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\search_engine.py analiz ediliyor
+2025-04-05 06:15:35,117 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\search_engine.py başarıyla analiz edildi
+2025-04-05 06:15:35,117 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\search_engine.py kalite analizi yapılıyor
+2025-04-05 06:15:35,119 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\search_engine.py kalite analizi tamamlandı
+2025-04-05 06:15:35,138 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\search_engine.py için kodlama: Windows-1254 (güven: 56.94%)
+2025-04-05 06:15:35,140 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\search_engine.py başarıyla işlendi
+2025-04-05 06:15:35,140 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\sqlite_storage.py analiz ediliyor
+2025-04-05 06:15:35,142 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\sqlite_storage.py başarıyla analiz edildi
+2025-04-05 06:15:35,143 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\sqlite_storage.py kalite analizi yapılıyor
+2025-04-05 06:15:35,145 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\sqlite_storage.py kalite analizi tamamlandı
+2025-04-05 06:15:35,173 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\sqlite_storage.py için kodlama: Windows-1254 (güven: 54.76%)
+2025-04-05 06:15:35,174 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\sqlite_storage.py başarıyla işlendi
+2025-04-05 06:15:35,174 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\sync_faiss_chromadb.py analiz ediliyor
+2025-04-05 06:15:35,176 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\sync_faiss_chromadb.py başarıyla analiz edildi
+2025-04-05 06:15:35,177 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\sync_faiss_chromadb.py kalite analizi yapılıyor
+2025-04-05 06:15:35,178 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\sync_faiss_chromadb.py kalite analizi tamamlandı
+2025-04-05 06:15:35,201 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\sync_faiss_chromadb.py için kodlama: Windows-1254 (güven: 54.99%)
+2025-04-05 06:15:35,202 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\sync_faiss_chromadb.py başarıyla işlendi
+2025-04-05 06:15:35,203 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\test_suite.py analiz ediliyor
+2025-04-05 06:15:35,204 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\test_suite.py başarıyla analiz edildi
+2025-04-05 06:15:35,205 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\test_suite.py kalite analizi yapılıyor
+2025-04-05 06:15:35,207 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\test_suite.py kalite analizi tamamlandı
+2025-04-05 06:15:35,213 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\test_suite.py için kodlama: utf-8 (güven: 99.00%)
+2025-04-05 06:15:35,214 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\test_suite.py başarıyla işlendi
+2025-04-05 06:15:35,214 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\text_processing.py analiz ediliyor
+2025-04-05 06:15:35,216 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\text_processing.py başarıyla analiz edildi
+2025-04-05 06:15:35,217 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\text_processing.py kalite analizi yapılıyor
+2025-04-05 06:15:35,218 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\text_processing.py kalite analizi tamamlandı
+2025-04-05 06:15:35,223 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\text_processing.py için kodlama: utf-8 (güven: 99.00%)
+2025-04-05 06:15:35,223 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\text_processing.py başarıyla işlendi
+2025-04-05 06:15:35,224 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\training_monitor.py analiz ediliyor
+2025-04-05 06:15:35,225 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\training_monitor.py başarıyla analiz edildi
+2025-04-05 06:15:35,226 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\training_monitor.py kalite analizi yapılıyor
+2025-04-05 06:15:35,227 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\training_monitor.py kalite analizi tamamlandı
+2025-04-05 06:15:35,247 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\training_monitor.py için kodlama: Windows-1254 (güven: 54.94%)
+2025-04-05 06:15:35,248 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\training_monitor.py başarıyla işlendi
+2025-04-05 06:15:35,248 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_gorsellestirme.py analiz ediliyor
+2025-04-05 06:15:35,252 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_gorsellestirme.py başarıyla analiz edildi
+2025-04-05 06:15:35,252 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_gorsellestirme.py kalite analizi yapılıyor
+2025-04-05 06:15:35,254 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_gorsellestirme.py kalite analizi tamamlandı
+2025-04-05 06:15:35,277 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_gorsellestirme.py için kodlama: Windows-1254 (güven: 51.25%)
+2025-04-05 06:15:35,278 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_gorsellestirme.py başarıyla işlendi
+2025-04-05 06:15:35,278 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_isleme.py analiz ediliyor
+2025-04-05 06:15:35,280 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_isleme.py başarıyla analiz edildi
+2025-04-05 06:15:35,281 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_isleme.py kalite analizi yapılıyor
+2025-04-05 06:15:35,284 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_isleme.py kalite analizi tamamlandı
+2025-04-05 06:15:35,308 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_isleme.py için kodlama: Windows-1254 (güven: 54.73%)
+2025-04-05 06:15:35,309 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_isleme.py başarıyla işlendi
+2025-04-05 06:15:35,309 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\yapay_zeka_finetuning.py analiz ediliyor
+2025-04-05 06:15:35,313 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\yapay_zeka_finetuning.py başarıyla analiz edildi
+2025-04-05 06:15:35,314 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\yapay_zeka_finetuning.py kalite analizi yapılıyor
+2025-04-05 06:15:35,319 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\yapay_zeka_finetuning.py kalite analizi tamamlandı
+2025-04-05 06:15:35,367 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\yapay_zeka_finetuning.py için kodlama: MacRoman (güven: 56.67%)
+2025-04-05 06:15:35,368 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\yapay_zeka_finetuning.py başarıyla işlendi
+2025-04-05 06:15:35,368 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zoteromodule.py analiz ediliyor
+2025-04-05 06:15:35,370 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zoteromodule.py başarıyla analiz edildi
+2025-04-05 06:15:35,371 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zoteromodule.py kalite analizi yapılıyor
+2025-04-05 06:15:35,372 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zoteromodule.py kalite analizi tamamlandı
+2025-04-05 06:15:35,390 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zoteromodule.py için kodlama: Windows-1254 (güven: 56.34%)
+2025-04-05 06:15:35,391 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zoteromodule.py başarıyla işlendi
+2025-04-05 06:15:35,391 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_extension.py analiz ediliyor
+2025-04-05 06:15:35,393 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_extension.py başarıyla analiz edildi
+2025-04-05 06:15:35,394 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_extension.py kalite analizi yapılıyor
+2025-04-05 06:15:35,395 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_extension.py kalite analizi tamamlandı
+2025-04-05 06:15:35,401 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_extension.py için kodlama: utf-8 (güven: 99.00%)
+2025-04-05 06:15:35,401 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_extension.py başarıyla işlendi
+2025-04-05 06:15:35,402 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_integration.py analiz ediliyor
+2025-04-05 06:15:35,409 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_integration.py başarıyla analiz edildi
+2025-04-05 06:15:35,410 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_integration.py kalite analizi yapılıyor
+2025-04-05 06:15:35,412 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_integration.py kalite analizi tamamlandı
+2025-04-05 06:15:35,419 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_integration.py için kodlama: utf-8 (güven: 99.00%)
+2025-04-05 06:15:35,420 - INFO - C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_integration.py başarıyla işlendi
+2025-04-05 06:15:35,430 - INFO - generate_statistics başlıyor
+2025-04-05 06:15:35,442 - INFO - generate_statistics tamamlandı
+2025-04-05 06:15:35,443 - INFO - generate_csv başlıyor
+2025-04-05 06:15:35,451 - INFO - generate_csv tamamlandı
+2025-04-05 06:15:35,451 - INFO - generate_dependency_map başlıyor
+2025-04-05 06:15:35,620 - ERROR - pydeps hatası: usage: pydeps [-h] [--debug] [--config FILE] [--no-config] [--version]
+              [-L LOG] [--find-package] [-v] [-o file] [-T FORMAT]
+              [--display PROGRAM] [--noshow] [--show-deps] [--show-raw-deps]
+              [--deps-output DEPS_OUT] [--show-dot] [--dot-output DOT_OUT]
+              [--nodot] [--no-output] [--show-cycles] [--debug-mf INT]
+              [--noise-level INT] [--max-bacon INT] [--max-module-depth INT]
+              [--pylib] [--pylib-all] [--include-missing]
+              [-x PATTERN [PATTERN ...]] [-xx MODULE [MODULE ...]]
+              [--only MODULE_PATH [MODULE_PATH ...]] [--externals] [--reverse]
+              [--rankdir {TB,BT,LR,RL}] [--cluster] [--min-cluster-size INT]
+              [--max-cluster-size INT] [--keep-target-cluster]
+              [--collapse-target-cluster] [--rmprefix PREFIX [PREFIX ...]]
+              [--start-color INT]
+              fname
+pydeps: error: unrecognized arguments: C:/Users/mete/Zotero/zotasistan/zapata_m6h\birlesikdosyalar\deps.html
+
+2025-04-05 06:15:35,623 - INFO - Çıktılar 'C:/Users/mete/Zotero/zotasistan/zapata_m6h\birlesikdosyalar' altına kaydedildi.
+2025-04-05 06:15:38,245 - INFO - black tamamlandı
+2025-04-05 06:15:41,143 - INFO - flake8 tamamlandı
+2025-04-05 06:15:41,827 - INFO - env_bulucu12.py tamamlandı
+2025-04-05 06:15:43,284 - INFO - mbaix4.py tamamlandı

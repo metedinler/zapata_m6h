@@ -1,0 +1,40 @@
+Pillow  # Görüntü işleme
+argparse  # Komut satırı argümanları işleme
+borb  # PDF işleme
+camelot-py  # PDF'den tablo çıkarma
+chromadb  # Vektör veritabanı
+colorlog  # Renkli loglama
+customtkinter  # Modern GUI tasarımı
+datasets  # Veri seti yönetimi
+detectron2  # Görüntü segmentasyonu ve nesne tespiti
+faiss-cpu  # Hızlı benzerlik arama
+fitz  # PyMuPDF ile PDF işleme
+flask  # Web API geliştirme
+gc  # Bellek yönetimi
+layoutparser  # PDF ve dokümanlardan düzen algılama
+matplotlib  # Grafik çizimi
+networkx  # Grafik (graph) veri yapıları ve algoritmaları
+nltk  # Doğal dil işleme
+numpy  # Sayısal hesaplama
+openai  # OpenAI API entegrasyonu
+pandas  # Veri işleme ve analiz
+pdfminer.six  # PDF'den metin çıkarma
+pdfplumber  # PDF içeriği analiz etme
+pdfquery  # PDF içinde sorgulama
+pytesseract  # OCR ile metin tanıma
+pyzotero  # Zotero API ile entegrasyon
+redis  # Bellek içi veritabanı
+requests  # HTTP istekleri yapma
+scikit-learn  # Makine öğrenimi ve veri analizi
+seaborn  # Veri görselleştirme
+sentence-transformers  # Cümle embedding işlemleri
+sqlite3  # Hafif veritabanı yönetimi
+tabula  # PDF'den tablo çıkarma
+threading  # Çoklu iş parçacığı yönetimi
+tika  # Apache Tika ile belge işleme
+time  # Zaman yönetimi ve ölçümleri
+tkinter  # GUI oluşturma
+torch  # PyTorch derin öğrenme çerçevesi
+transformers  # NLP modelleri ve transformer bazlı işlemler
+unittest  # Test framework
+webbrowser  # Tarayıcı işlemleri

@@ -1,0 +1,1876 @@
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\alternativeembeddingmodule.py ===
+AlternativeEmbeddingProcessor.__init__:
+  Satır sayısı: 15
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 93.1
+
+AlternativeEmbeddingProcessor.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 93.1
+
+AlternativeEmbeddingProcessor.generate_embedding:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 93.1
+
+AlternativeEmbeddingProcessor.save_embedding_to_chromadb:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 93.1
+
+AlternativeEmbeddingProcessor.save_embedding_to_redis:
+  Satır sayısı: 5
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 93.1
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\citationmappingmodule.py ===
+CitationMapper.__init__:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 77.0
+
+CitationMapper.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 77.0
+
+CitationMapper.extract_references:
+  Satır sayısı: 56
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 77.0
+
+CitationMapper.map_citations_to_references:
+  Satır sayısı: 13
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 77.0
+
+CitationMapper.save_citation_map_to_sqlite:
+  Satır sayısı: 30
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 77.0
+
+CitationMapper.save_citation_map_to_chromadb:
+  Satır sayısı: 16
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 77.0
+
+CitationMapper.save_citation_map_to_redis:
+  Satır sayısı: 13
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 77.0
+
+CitationMapper.save_citation_map_to_json:
+  Satır sayısı: 14
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 77.0
+
+CitationMapper.extract_references_parallel:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 77.0
+
+CitationMapper.get_citation_network:
+  Satır sayısı: 28
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 77.0
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\clustering_module.py ===
+ClusteringProcessor.__init__:
+  Satır sayısı: 7
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.4
+
+ClusteringProcessor.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.4
+
+ClusteringProcessor.load_embeddings_from_chromadb:
+  Satır sayısı: 11
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.4
+
+ClusteringProcessor.cluster_documents:
+  Satır sayısı: 17
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.4
+
+ClusteringProcessor.save_clusters_to_sqlite:
+  Satır sayısı: 24
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.4
+
+ClusteringProcessor.save_clusters_to_chromadb:
+  Satır sayısı: 9
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.4
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\configmodule.py ===
+Config.__init__:
+  Satır sayısı: 74
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.0
+
+Config.ensure_directories:
+  Satır sayısı: 13
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.0
+
+Config.setup_logging:
+  Satır sayısı: 22
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.0
+
+Config.get_env_variable:
+  Satır sayısı: 3
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.0
+
+Config.get_max_workers:
+  Satır sayısı: 3
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.0
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\d3js_visualizer.py ===
+D3Visualizer.__init__:
+  Satır sayısı: 70
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.3
+
+D3Visualizer.generate_html:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.3
+
+D3Visualizer.show_mindmap:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.3
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\document_parser.py ===
+DocumentParser.__init__:
+  Satır sayısı: 7
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 85.7
+
+DocumentParser.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 85.7
+
+DocumentParser.parse_pdf:
+  Satır sayısı: 40
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 85.7
+
+DocumentParser.parse_txt:
+  Satır sayısı: 29
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 85.7
+
+DocumentParser.parse_ris:
+  Satır sayısı: 30
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 85.7
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\embeddingmodule.py ===
+EmbeddingProcessor.__init__:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 93.9
+
+EmbeddingProcessor.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 93.9
+
+EmbeddingProcessor.generate_embedding:
+  Satır sayısı: 15
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 93.9
+
+EmbeddingProcessor.save_embedding_to_chromadb:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 93.9
+
+EmbeddingProcessor.save_embedding_to_redis:
+  Satır sayısı: 5
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 93.9
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\error_logging.py ===
+ErrorLogger.__init__:
+  Satır sayısı: 20
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.8
+
+ErrorLogger.init_sqlite_log_table:
+  Satır sayısı: 24
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.8
+
+ErrorLogger.log_to_file:
+  Satır sayısı: 5
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.8
+
+ErrorLogger.log_to_json:
+  Satır sayısı: 16
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.8
+
+ErrorLogger.log_to_sqlite:
+  Satır sayısı: 21
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.8
+
+ErrorLogger.log_error:
+  Satır sayısı: 18
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.8
+
+ErrorLogger.retrieve_logs:
+  Satır sayısı: 33
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.8
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\faiss_integration.py ===
+FAISSIntegration.__init__:
+  Satır sayısı: 7
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.5
+
+FAISSIntegration.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.5
+
+FAISSIntegration.create_db_connection:
+  Satır sayısı: 9
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.5
+
+FAISSIntegration.add_embedding:
+  Satır sayısı: 15
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.5
+
+FAISSIntegration.store_embedding_to_db:
+  Satır sayısı: 11
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.5
+
+FAISSIntegration.search_similar:
+  Satır sayısı: 11
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.5
+
+FAISSIntegration.sync_with_chromadb:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.5
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\fetch_top_k_results.py ===
+FetchTopKResults.__init__:
+  Satır sayısı: 7
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.9
+
+FetchTopKResults.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.9
+
+FetchTopKResults.log_error:
+  Satır sayısı: 14
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.9
+
+FetchTopKResults.fetch_results:
+  Satır sayısı: 26
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.9
+
+FetchTopKResults.test_fetch_results:
+  Satır sayısı: 17
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.9
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\FineTuning.py ===
+FineTuningDataset.__init__:
+  Satır sayısı: 10
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 84.5
+
+FineTuningDataset.__len__:
+  Satır sayısı: 2
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 84.5
+
+FineTuningDataset.__getitem__:
+  Satır sayısı: 7
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 84.5
+
+FineTuner.__init__:
+  Satır sayısı: 10
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 84.5
+
+FineTuner.fetch_training_data:
+  Satır sayısı: 11
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 84.5
+
+FineTuner.train_model:
+  Satır sayısı: 20
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 84.5
+
+FineTuner.save_model_to_redis:
+  Satır sayısı: 6
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 84.5
+
+FineTuner.load_model_from_redis:
+  Satır sayısı: 10
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 84.5
+
+parallel_finetune:
+  Satır sayısı: 5
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 84.5
+
+train_selected_models:
+  Satır sayısı: 4
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 84.5
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimindmap.py ===
+MindMapGUI.__init__:
+  Satır sayısı: 5
+  Karmaşıklık: 1.00
+  Docstring: Yok
+  Bakım indeksi: 95.0
+
+MindMapGUI.create_widgets:
+  Satır sayısı: 10
+  Karmaşıklık: 1.00
+  Docstring: Yok
+  Bakım indeksi: 95.0
+
+MindMapGUI.load_mindmap_data:
+  Satır sayısı: 18
+  Karmaşıklık: 1.00
+  Docstring: Yok
+  Bakım indeksi: 95.0
+
+MindMapGUI.open_mindmap:
+  Satır sayısı: 9
+  Karmaşıklık: 1.00
+  Docstring: Yok
+  Bakım indeksi: 95.0
+
+run_gui:
+  Satır sayısı: 4
+  Karmaşıklık: 1.00
+  Docstring: Yok
+  Bakım indeksi: 95.0
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\guimodule.py ===
+ZapataGUI.__init__:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.2
+
+ZapataGUI.setup_logging:
+  Satır sayısı: 18
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.2
+
+ZapataGUI.create_widgets:
+  Satır sayısı: 13
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.2
+
+ZapataGUI.run_search:
+  Satır sayısı: 11
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.2
+
+ZapataGUI.perform_search:
+  Satır sayısı: 14
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.2
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\helpermodule.py ===
+HelperFunctions.__init__:
+  Satır sayısı: 5
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.5
+
+HelperFunctions.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.5
+
+HelperFunctions.clean_text:
+  Satır sayısı: 20
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.5
+
+HelperFunctions.save_json:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.5
+
+HelperFunctions.load_json:
+  Satır sayısı: 10
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.5
+
+HelperFunctions.optimize_memory:
+  Satır sayısı: 5
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.5
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\layout_analysis.py ===
+LayoutAnalyzer.__init__:
+  Satır sayısı: 14
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.9
+
+LayoutAnalyzer.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.9
+
+LayoutAnalyzer.create_db_connection:
+  Satır sayısı: 9
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.9
+
+LayoutAnalyzer.map_document_structure:
+  Satır sayısı: 16
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.9
+
+LayoutAnalyzer.store_mapping_to_db:
+  Satır sayısı: 11
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.9
+
+LayoutAnalyzer.retrieve_mapping:
+  Satır sayısı: 19
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.9
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\main.py ===
+ZapataM6H.__init__:
+  Satır sayısı: 7
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 91.3
+
+ZapataM6H.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 91.3
+
+ZapataM6H.run_console_mode:
+  Satır sayısı: 13
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 91.3
+
+ZapataM6H.run_gui_mode:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 91.3
+
+ZapataM6H.run_training_monitor:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 91.3
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\mindmap_visualizer.py ===
+MindMapVisualizer.__init__:
+  Satır sayısı: 10
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 97.3
+
+MindMapVisualizer.fetch_references:
+  Satır sayısı: 10
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 97.3
+
+MindMapVisualizer.extract_citation_network:
+  Satır sayısı: 19
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 97.3
+
+MindMapVisualizer.visualize_citation_network:
+  Satır sayısı: 18
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 97.3
+
+MindMapVisualizer.export_graph_json:
+  Satır sayısı: 15
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 97.3
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\Mind_Map_Visualizer.py ===
+MindMapVisualizer.__init__:
+  Satır sayısı: 4
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 111.4
+
+MindMapVisualizer.create_ui:
+  Satır sayısı: 9
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 111.4
+
+MindMapVisualizer.load_mind_map:
+  Satır sayısı: 10
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 111.4
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\multi_source_search.py ===
+MultiSourceSearch.__init__:
+  Satır sayısı: 10
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 85.4
+
+MultiSourceSearch.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 85.4
+
+MultiSourceSearch.load_faiss_index:
+  Satır sayısı: 14
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 85.4
+
+MultiSourceSearch.multi_source_search:
+  Satır sayısı: 29
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 85.4
+
+MultiSourceSearch.search_faiss:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 85.4
+
+MultiSourceSearch.search_chromadb:
+  Satır sayısı: 9
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 85.4
+
+MultiSourceSearch.search_sqlite:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 85.4
+
+MultiSourceSearch.search_redis:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 85.4
+
+MultiSourceSearch.search_retrieve:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 85.4
+
+MultiSourceSearch.encode_queries:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 85.4
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfkutuphane.py ===
+AdvancedPDFProcessor.__init__:
+  Satır sayısı: 13
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 83.8
+
+AdvancedPDFProcessor._load_reference_model:
+  Satır sayısı: 3
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 83.8
+
+AdvancedPDFProcessor._load_layout_model:
+  Satır sayısı: 3
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 83.8
+
+AdvancedPDFProcessor.extract_text:
+  Satır sayısı: 35
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 83.8
+
+AdvancedPDFProcessor.extract_tables:
+  Satır sayısı: 28
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 83.8
+
+AdvancedPDFProcessor.extract_references:
+  Satır sayısı: 26
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 83.8
+
+AdvancedPDFProcessor._extract_references_by_section:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 83.8
+
+AdvancedPDFProcessor.detect_page_layout:
+  Satır sayısı: 35
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 83.8
+
+AdvancedPDFProcessor._classify_block:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 83.8
+
+AdvancedPDFProcessor.process_pdf:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 83.8
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\pdfprocessing.py ===
+PDFProcessor.__init__:
+  Satır sayısı: 5
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 91.4
+
+PDFProcessor.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 91.4
+
+PDFProcessor.extract_text_from_pdf:
+  Satır sayısı: 16
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 91.4
+
+PDFProcessor.extract_tables_from_pdf:
+  Satır sayısı: 19
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 91.4
+
+PDFProcessor.detect_layout:
+  Satır sayısı: 5
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 91.4
+
+PDFProcessor.reflow_columns:
+  Satır sayısı: 5
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 91.4
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\process_manager.py ===
+ProcessManager.__init__:
+  Satır sayısı: 15
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 95.2
+
+ProcessManager.enqueue_task:
+  Satır sayısı: 9
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 95.2
+
+ProcessManager.dequeue_task:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 95.2
+
+ProcessManager.process_task:
+  Satır sayısı: 10
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 95.2
+
+ProcessManager.run_multiprocessing:
+  Satır sayısı: 11
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 95.2
+
+ProcessManager.run_threading:
+  Satır sayısı: 11
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 95.2
+
+ProcessManager.retry_failed_tasks:
+  Satır sayısı: 15
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 95.2
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\query_expansion.py ===
+QueryExpansion.__init__:
+  Satır sayısı: 3
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.8
+
+QueryExpansion.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.8
+
+QueryExpansion.expand_query:
+  Satır sayısı: 26
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.8
+
+QueryExpansion.get_synonyms:
+  Satır sayısı: 9
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.8
+
+QueryExpansion.get_stems:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.8
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\rag_pipeline.py ===
+RAGPipeline.__init__:
+  Satır sayısı: 5
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 98.4
+
+RAGPipeline.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 98.4
+
+RAGPipeline.retrieve_data:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 98.4
+
+RAGPipeline.generate_response:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 98.4
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\rediscache.py ===
+RedisCache.__init__:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 80.6
+
+RedisCache.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 80.6
+
+RedisCache.store_embedding:
+  Satır sayısı: 11
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 80.6
+
+RedisCache.retrieve_embedding:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 80.6
+
+RedisCache.cache_embedding:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 80.6
+
+RedisCache.get_cached_embedding:
+  Satır sayısı: 13
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 80.6
+
+RedisCache.cache_mindmap_data:
+  Satır sayısı: 11
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 80.6
+
+RedisCache.get_mindmap_data:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 80.6
+
+RedisCache.cache_map_data:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 80.6
+
+RedisCache.get_cached_map:
+  Satır sayısı: 13
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 80.6
+
+RedisCache.store_query_result:
+  Satır sayısı: 7
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 80.6
+
+RedisCache.get_query_result:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 80.6
+
+RedisCache.delete_cache:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 80.6
+
+RedisCache.clear_cache:
+  Satır sayısı: 7
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 80.6
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\redisqueue.py ===
+RedisQueue.__init__:
+  Satır sayısı: 10
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 81.0
+
+RedisQueue.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 81.0
+
+RedisQueue.enqueue_task:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 81.0
+
+RedisQueue.dequeue_task:
+  Satır sayısı: 14
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 81.0
+
+RedisQueue.retry_failed_tasks:
+  Satır sayısı: 25
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 81.0
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\reranking_module.py ===
+RerankingModule.__init__:
+  Satır sayısı: 5
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.8
+
+RerankingModule.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.8
+
+RerankingModule.rerank_results:
+  Satır sayısı: 34
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.8
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\rest_api.py ===
+get_db_connection:
+  Satır sayısı: 2
+  Karmaşıklık: 0.55
+  Docstring: Yok
+  Bakım indeksi: 81.5
+
+home:
+  Satır sayısı: 2
+  Karmaşıklık: 0.55
+  Docstring: Yok
+  Bakım indeksi: 81.5
+
+start_training:
+  Satır sayısı: 11
+  Karmaşıklık: 0.55
+  Docstring: Yok
+  Bakım indeksi: 81.5
+
+get_training_status:
+  Satır sayısı: 3
+  Karmaşıklık: 0.55
+  Docstring: Yok
+  Bakım indeksi: 81.5
+
+get_training_results:
+  Satır sayısı: 6
+  Karmaşıklık: 0.55
+  Docstring: Yok
+  Bakım indeksi: 81.5
+
+process_citation_data:
+  Satır sayısı: 6
+  Karmaşıklık: 0.55
+  Docstring: Yok
+  Bakım indeksi: 81.5
+
+retrieve_documents_api:
+  Satır sayısı: 8
+  Karmaşıklık: 0.55
+  Docstring: Yok
+  Bakım indeksi: 81.5
+
+search_in_chromadb:
+  Satır sayısı: 8
+  Karmaşıklık: 0.55
+  Docstring: Yok
+  Bakım indeksi: 81.5
+
+search_in_faiss:
+  Satır sayısı: 8
+  Karmaşıklık: 0.55
+  Docstring: Yok
+  Bakım indeksi: 81.5
+
+stop_training:
+  Satır sayısı: 4
+  Karmaşıklık: 0.55
+  Docstring: Yok
+  Bakım indeksi: 81.5
+
+get_api_status:
+  Satır sayısı: 2
+  Karmaşıklık: 0.55
+  Docstring: Yok
+  Bakım indeksi: 81.5
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieval_reranker.py ===
+RetrievalReranker.__init__:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.9
+
+RetrievalReranker.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.9
+
+RetrievalReranker.rerank_results:
+  Satır sayısı: 33
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.9
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\retriever_integration.py ===
+RetrieverIntegration.__init__:
+  Satır sayısı: 4
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 101.7
+
+RetrieverIntegration.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 101.7
+
+RetrieverIntegration.send_query:
+  Satır sayısı: 10
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 101.7
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_and_rerank_parallel.py ===
+retrieve_and_rerank_parallel:
+  Satır sayısı: 17
+  Karmaşıklık: 2.00
+  Docstring: Yok
+  Bakım indeksi: 104.3
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_faiss.py ===
+faiss_search:
+  Satır sayısı: 19
+  Karmaşıklık: 2.00
+  Docstring: Yok
+  Bakım indeksi: 101.8
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\retrieve_with_reranking.py ===
+retrieve_from_source:
+  Satır sayısı: 19
+  Karmaşıklık: 1.33
+  Docstring: Yok
+  Bakım indeksi: 81.7
+
+rerank_results:
+  Satır sayısı: 34
+  Karmaşıklık: 1.33
+  Docstring: Yok
+  Bakım indeksi: 81.7
+
+retrieve_and_rerank:
+  Satır sayısı: 17
+  Karmaşıklık: 1.33
+  Docstring: Yok
+  Bakım indeksi: 81.7
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\robustembeddingmodule.py ===
+RobustEmbeddingProcessor.__init__:
+  Satır sayısı: 21
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.0
+
+RobustEmbeddingProcessor.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.0
+
+RobustEmbeddingProcessor.generate_embedding:
+  Satır sayısı: 18
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.0
+
+RobustEmbeddingProcessor.save_embedding_to_chromadb:
+  Satır sayısı: 10
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.0
+
+RobustEmbeddingProcessor.save_embedding_to_redis:
+  Satır sayısı: 9
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.0
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\scientific_mapping.py ===
+ScientificMapper.__init__:
+  Satır sayısı: 16
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 87.2
+
+ScientificMapper.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 87.2
+
+ScientificMapper.create_db_connection:
+  Satır sayısı: 9
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 87.2
+
+ScientificMapper.map_scientific_sections:
+  Satır sayısı: 22
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 87.2
+
+ScientificMapper.store_mapping_to_db:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 87.2
+
+ScientificMapper.retrieve_mapping:
+  Satır sayısı: 19
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 87.2
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\search_engine.py ===
+SearchEngine.__init__:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 87.8
+
+SearchEngine.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 87.8
+
+SearchEngine.load_faiss_index:
+  Satır sayısı: 9
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 87.8
+
+SearchEngine.multi_source_search:
+  Satır sayısı: 24
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 87.8
+
+SearchEngine.search_faiss:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 87.8
+
+SearchEngine.search_chromadb:
+  Satır sayısı: 9
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 87.8
+
+SearchEngine.search_sqlite:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 87.8
+
+SearchEngine.search_redis:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 87.8
+
+SearchEngine.encode_queries:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 87.8
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\sqlite_storage.py ===
+SQLiteStorage.__init__:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 81.7
+
+SQLiteStorage.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 81.7
+
+SQLiteStorage.create_connection:
+  Satır sayısı: 9
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 81.7
+
+SQLiteStorage.create_tables:
+  Satır sayısı: 47
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 81.7
+
+SQLiteStorage.store_document:
+  Satır sayısı: 15
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 81.7
+
+SQLiteStorage.store_embedding:
+  Satır sayısı: 15
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 81.7
+
+SQLiteStorage.store_citation:
+  Satır sayısı: 15
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 81.7
+
+SQLiteStorage.store_scientific_map:
+  Satır sayısı: 15
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 81.7
+
+SQLiteStorage.retrieve_document:
+  Satır sayısı: 27
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 81.7
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\sync_faiss_chromadb.py ===
+SyncFAISSChromaDB.__init__:
+  Satır sayısı: 7
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.8
+
+SyncFAISSChromaDB.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.8
+
+SyncFAISSChromaDB.load_faiss_index:
+  Satır sayısı: 14
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.8
+
+SyncFAISSChromaDB.sync_from_chromadb_to_faiss:
+  Satır sayısı: 30
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.8
+
+SyncFAISSChromaDB.sync_from_faiss_to_chromadb:
+  Satır sayısı: 21
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.8
+
+SyncFAISSChromaDB.full_sync:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.8
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\test_suite.py ===
+TestZapataModules.setUpClass:
+  Satır sayısı: 16
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 86.7
+
+TestZapataModules.log_test_result:
+  Satır sayısı: 51
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 86.7
+
+TestZapataModules.test_error_logging:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 86.7
+
+TestZapataModules.test_process_manager:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 86.7
+
+TestZapataModules.test_fine_tuning:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 86.7
+
+TestZapataModules.test_pdf_processing:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 86.7
+
+TestZapataModules.test_save_clean_text:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 86.7
+
+TestZapataModules.test_citation_mapping:
+  Satır sayısı: 13
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 86.7
+
+TestZapataModules.tearDownClass:
+  Satır sayısı: 5
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 86.7
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\text_processing.py ===
+TextProcessor.__init__:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.0
+
+TextProcessor.clean_text:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.0
+
+TextProcessor.remove_stopwords:
+  Satır sayısı: 5
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.0
+
+TextProcessor.stem_words:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.0
+
+TextProcessor.process_text:
+  Satır sayısı: 7
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.0
+
+TextProcessor.split_text:
+  Satır sayısı: 7
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.0
+
+TextProcessor.save_to_sqlite:
+  Satır sayısı: 15
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.0
+
+TextProcessor.save_to_redis:
+  Satır sayısı: 3
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.0
+
+TextProcessor.process_and_store:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.0
+
+TextProcessor.fetch_from_redis:
+  Satır sayısı: 3
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.0
+
+TextProcessor.fetch_from_sqlite:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.0
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\training_monitor.py ===
+TrainingMonitor.__init__:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.8
+
+TrainingMonitor.setup_logging:
+  Satır sayısı: 18
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.8
+
+TrainingMonitor.create_widgets:
+  Satır sayısı: 14
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.8
+
+TrainingMonitor.start_training:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.8
+
+TrainingMonitor.run_training:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 94.8
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_gorsellestirme.py ===
+DataVisualizer.__init__:
+  Satır sayısı: 4
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.0
+
+DataVisualizer.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.0
+
+DataVisualizer.create_db_connection:
+  Satır sayısı: 9
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.0
+
+DataVisualizer.fetch_citation_network:
+  Satır sayısı: 15
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.0
+
+DataVisualizer.plot_citation_network:
+  Satır sayısı: 27
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.0
+
+DataVisualizer.plot_clustering_results:
+  Satır sayısı: 14
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 89.0
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\veri_isleme.py ===
+CitationAnalyzer.__init__:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.8
+
+CitationAnalyzer.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.8
+
+CitationAnalyzer.create_db_connection:
+  Satır sayısı: 9
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.8
+
+CitationAnalyzer.extract_citations:
+  Satır sayısı: 13
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.8
+
+CitationAnalyzer.map_citations_to_references:
+  Satır sayısı: 17
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.8
+
+CitationAnalyzer.process_document:
+  Satır sayısı: 8
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.8
+
+CitationAnalyzer.retrieve_citation_network:
+  Satır sayısı: 18
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 88.8
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\yapay_zeka_finetuning.py ===
+FineTuningDataset.__init__:
+  Satır sayısı: 10
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 65.5
+
+FineTuningDataset.__len__:
+  Satır sayısı: 2
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 65.5
+
+FineTuningDataset.__getitem__:
+  Satır sayısı: 7
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 65.5
+
+FineTuner.__init__:
+  Satır sayısı: 10
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 65.5
+
+FineTuner.fetch_training_data:
+  Satır sayısı: 12
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 65.5
+
+FineTuner.train_model:
+  Satır sayısı: 22
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 65.5
+
+FineTuner.save_model_to_redis:
+  Satır sayısı: 8
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 65.5
+
+FineTuner.load_model_from_redis:
+  Satır sayısı: 12
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 65.5
+
+FineTuningManager.__init__:
+  Satır sayısı: 10
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 65.5
+
+FineTuningManager.load_dataset:
+  Satır sayısı: 5
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 65.5
+
+FineTuningManager.train_model:
+  Satır sayısı: 22
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 65.5
+
+FineTuningManager.evaluate_model:
+  Satır sayısı: 6
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 65.5
+
+parallel_training:
+  Satır sayısı: 8
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 65.5
+
+parallel_training:
+  Satır sayısı: 8
+  Karmaşıklık: 0.50
+  Docstring: Yok
+  Bakım indeksi: 65.5
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\zoteromodule.py ===
+ZoteroManager.__init__:
+  Satır sayısı: 6
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.2
+
+ZoteroManager.setup_logging:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.2
+
+ZoteroManager.fetch_references_from_zotero:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.2
+
+ZoteroManager.download_pdf_from_doi:
+  Satır sayısı: 19
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.2
+
+ZoteroManager.save_references:
+  Satır sayısı: 13
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.2
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_extension.py ===
+ZoteroExtension.__init__:
+  Satır sayısı: 11
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.2
+
+ZoteroExtension.fetch_all_references:
+  Satır sayısı: 10
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.2
+
+ZoteroExtension.fetch_pdf_files:
+  Satır sayısı: 16
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.2
+
+ZoteroExtension.send_to_zapata:
+  Satır sayısı: 23
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.2
+
+ZoteroExtension.fetch_results_from_zapata:
+  Satır sayısı: 15
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.2
+
+ZoteroExtension.highlight_references:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.2
+
+ZoteroExtension.extract_notes:
+  Satır sayısı: 10
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.2
+
+ZoteroExtension.sync_with_zapata:
+  Satır sayısı: 10
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 92.2
+
+
+=== Dosya: C:/Users/mete/Zotero/zotasistan/zapata_m6h\zotero_integration.py ===
+ZoteroIntegration.__init__:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.1
+
+ZoteroIntegration.ensure_tables:
+  Satır sayısı: 19
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.1
+
+ZoteroIntegration.fetch_references_from_zotero:
+  Satır sayısı: 12
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.1
+
+ZoteroIntegration.save_references_to_sqlite:
+  Satır sayısı: 24
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.1
+
+ZoteroIntegration.fetch_pdf_from_scihub:
+  Satır sayısı: 14
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.1
+
+ZoteroIntegration.cache_references_to_redis:
+  Satır sayısı: 7
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.1
+
+ZoteroIntegration.load_cached_references:
+  Satır sayısı: 5
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.1
+
+ZoteroIntegration.export_references:
+  Satır sayısı: 26
+  Karmaşıklık: 0.00
+  Docstring: Yok
+  Bakım indeksi: 90.1
+

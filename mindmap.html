@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <title>Zihin Haritası</title>
+    <style>
+        .node circle { fill: steelblue; }
+        .node text { font: 12px sans-serif; }
+        .link { stroke: gray; stroke-width: 1.5px; }
+    </style>
+</head>
+<body>
+    <svg width="800" height="600"></svg>
+    <script>
+        d3.json("mindmap_data.json").then(function(graph) {
+            var width = 800, height = 600;
+            var svg = d3.select("svg"),
+                simulation = d3.forceSimulation(graph.nodes)
+                    .force("link", d3.forceLink(graph.links).id(d => d.id))
+                    .force("charge", d3.forceManyBody())
+                    .force("center", d3.forceCenter(width / 2, height / 2));
+
+            var link = svg.append("g").selectAll("line")
+                .data(graph.links)
+                .enter().append("line")
+                .attr("class", "link");
+
+            var node = svg.append("g").selectAll("circle")
+                .data(graph.nodes)
+                .enter().append("circle")
+                .attr("r", 8)
+                .attr("fill", "steelblue");
+
+            node.append("title").text(d => d.id);
+
+            simulation.on("tick", () => {
+                link.attr("x1", d => d.source.x)
+                    .attr("y1", d => d.source.y)
+                    .attr("x2", d => d.target.x)
+                    .attr("y2", d => d.target.y);
+
+                node.attr("cx", d => d.x).attr("cy", d => d.y);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+### ÇEVRESEL DEĞİŞKENLER ###
+KAYNAK_DIZIN=C:/Users/mete/Zotero/zotasistan/zapata_m6\configmodule.py
+# Kaynak: C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.py, C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.txt
+
+STORAGE_DIR=C:/Users/mete/Zotero/zotasistan/zapata_m6\configmodule.py
+# Kaynak: C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.py, C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.txt
+
+SUCCESS_DIR=C:/Users/mete/Zotero/zotasistan/zapata_m6\configmodule.py
+# Kaynak: C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.py, C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.txt
+
+OPENAI_API_KEY=
+# Kaynak: C:/Users/mete/Zotero/zotasistan/zapata_m6\configmodule.py:984, C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.py:984, C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.txt:984
+
+ZOTERO_API_KEY=
+# Kaynak: C:/Users/mete/Zotero/zotasistan/zapata_m6\configmodule.py:1042, C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.py:1042, C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.txt:1042
+
+ZOTERO_USER_ID=
+# Kaynak: C:/Users/mete/Zotero/zotasistan/zapata_m6\configmodule.py:1100, C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.py:1100, C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.txt:1100
+
+
+### VERİTABANI BAĞLANTILARI ###
+
+### DOSYA İŞLEMLERİ ###
+WRITE: *Vertices\n @ C:/Users/mete/Zotero/zotasistan/zapata_m6\veri_gorsellestirme.py:3287
+WRITE: *Edges\n @ C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.txt:47624
+WRITE: *Edges\n @ C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.py:47624
+WRITE: *Vertices\n @ C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.txt:47453
+WRITE: *Vertices\n @ C:/Users/mete/Zotero/zotasistan/zapata_m6\zzzapata_m6.py:47453
+WRITE: *Edges\n @ C:/Users/mete/Zotero/zotasistan/zapata_m6\veri_gorsellestirme.py:3458
+
+### HATALAR ###
+! Kritik hata: unterminated string literal (detected at line 9) (<unknown>, line 9)
