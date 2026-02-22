@@ -14,10 +14,14 @@
 # ==============================
 
 import logging
-import colorlog
+try:
+    import colorlog
+except Exception:
+    colorlog = None
 from retriever_integration import RetrieverIntegration
 from faiss_integration import FAISSIntegration
 from configmodule import config
+from ollama_client import OllamaClient
 
 class RAGPipeline:
     def __init__(self):
@@ -25,20 +29,24 @@ class RAGPipeline:
         self.logger = self.setup_logging()
         self.retriever = RetrieverIntegration()
         self.faiss = FAISSIntegration()
+        self.ollama = OllamaClient()
 
     def setup_logging(self):
         """Loglama sistemini kurar."""
-        log_formatter = colorlog.ColoredFormatter(
-            "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
-            datefmt="%Y-%m-%d %H:%M:%S",
-            log_colors={
-                'DEBUG': 'cyan',
-                'INFO': 'green',
-                'WARNING': 'yellow',
-                'ERROR': 'red',
-                'CRITICAL': 'bold_red',
-            }
-        )
+        if colorlog:
+            log_formatter = colorlog.ColoredFormatter(
+                "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
+                datefmt="%Y-%m-%d %H:%M:%S",
+                log_colors={
+                    'DEBUG': 'cyan',
+                    'INFO': 'green',
+                    'WARNING': 'yellow',
+                    'ERROR': 'red',
+                    'CRITICAL': 'bold_red',
+                }
+            )
+        else:
+            log_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(log_formatter)
         file_handler = logging.FileHandler("rag_pipeline.log", encoding="utf-8")
@@ -50,10 +58,29 @@ class RAGPipeline:
         logger.addHandler(file_handler)
         return logger
 
+    def _normalize_results(self, result_obj):
+        if result_obj is None:
+            return []
+        if isinstance(result_obj, list):
+            return result_obj
+        if isinstance(result_obj, dict):
+            for key in ("results", "documents", "items", "data"):
+                value = result_obj.get(key)
+                if isinstance(value, list):
+                    return value
+            return [result_obj]
+        return [result_obj]
+
     def retrieve_data(self, query):
         """Retrieve ve FAISS üzerinden veri çeker."""
-        retrieve_results = self.retriever.send_query(query)
-        faiss_results, _ = self.faiss.search_similar(query, top_k=5)
+        retrieve_results = self._normalize_results(self.retriever.send_query(query))
+
+        faiss_results = []
+        query_embedding = self.ollama.generate_embedding(query)
+        if query_embedding:
+            indices, distances = self.faiss.search_similar(query_embedding, top_k=5)
+            if indices or distances:
+                faiss_results = [{"indices": indices, "distances": distances}]
 
         combined_results = retrieve_results + faiss_results
         self.logger.info(f"✅ Retrieve ve FAISS sonuçları birleştirildi: {combined_results}")
@@ -63,8 +90,18 @@ class RAGPipeline:
         """RAG modeli ile en iyi yanıtı üretir."""
         retrieved_data = self.retrieve_data(query)
 
-        # Burada RAG modeli çalıştırılabilir (örneğin LlamaIndex veya LangChain ile)
-        response = f"🔍 {query} için en uygun sonuç: {retrieved_data[0] if retrieved_data else 'Sonuç bulunamadı'}"
+        context_items = [str(item) for item in retrieved_data[:5]]
+        context_text = "\n".join(context_items) if context_items else "Bağlam bulunamadı."
+        prompt = (
+            "Sen bilimsel makale asistanısın. Aşağıdaki bağlamı kullanarak kısa ve net yanıt ver.\n\n"
+            f"Soru: {query}\n"
+            f"Bağlam:\n{context_text}\n"
+        )
+
+        response = self.ollama.generate_text(prompt)
+        if not response:
+            response = f"🔍 {query} için bağlama dayalı yerel yanıt üretilemedi."
+
         self.logger.info(f"✅ RAG yanıtı üretildi: {response}")
         return response
 

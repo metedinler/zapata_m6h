@@ -10,3 +10,8 @@
 - `chromadb` paketi Python 3.14 ortamında Pydantic V1 uyumsuzluğu nedeniyle doğrudan importta hata verebiliyor.
 - Bu nedenle modüllerde "opsiyonel import" yaklaşımı uygulandı; Chroma kurulu/uyumlu değilse sistem çekirdeği çökmeden çalışıyor.
 - Bu yaklaşım geçiş çözümü; kalıcı çözüm için ortam sürüm uyumu (örn. Python 3.11/3.12 + kilitli paket sürümleri) gerekiyor.
+
+## 2026-02-23 / Ollama Test Notu
+- `rag_pipeline.generate_response('test')` çağrısı crash olmadan tamamlandı.
+- Retrieve servisi kapalı olduğunda (`127.0.0.1:8000 refused`) pipeline güvenli fallback yanıtı üretiyor.
+- Ollama servisi kapalı/erişilemez durumda ise yanıt üretimi uygulamayı düşürmeden metinsel fallback ile kapanıyor.

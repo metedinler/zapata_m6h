@@ -17,35 +17,56 @@
 # ==============================
 
 import os
-import openai
-import chromadb
-import redis
 import logging
-import colorlog
+try:
+    import colorlog
+except Exception:
+    colorlog = None
+
+try:
+    import openai
+except Exception:
+    openai = None
+
+try:
+    import chromadb
+except Exception:
+    chromadb = None
+
+try:
+    import redis
+except Exception:
+    redis = None
+
 import numpy as np
 from configmodule import config
+from ollama_client import OllamaClient
 
 class EmbeddingProcessor:
     def __init__(self):
         """Embedding işlemleri için sınıf. OpenAI veya alternatif embedding modellerini kullanır."""
         self.embedding_model = config.EMBEDDING_MODEL
-        self.chroma_client = chromadb.PersistentClient(path=str(config.CHROMA_DB_PATH))
-        self.redis_client = redis.StrictRedis(host=config.REDIS_HOST, port=config.REDIS_PORT, decode_responses=False)
+        self.ollama = OllamaClient()
+        self.chroma_client = chromadb.PersistentClient(path=str(config.CHROMA_DB_PATH)) if chromadb else None
+        self.redis_client = redis.StrictRedis(host=config.REDIS_HOST, port=config.REDIS_PORT, decode_responses=False) if redis else None
         self.logger = self.setup_logging()
 
     def setup_logging(self):
         """Loglama sistemini kurar."""
-        log_formatter = colorlog.ColoredFormatter(
-            "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
-            datefmt="%Y-%m-%d %H:%M:%S",
-            log_colors={
-                'DEBUG': 'cyan',
-                'INFO': 'green',
-                'WARNING': 'yellow',
-                'ERROR': 'red',
-                'CRITICAL': 'bold_red',
-            }
-        )
+        if colorlog:
+            log_formatter = colorlog.ColoredFormatter(
+                "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
+                datefmt="%Y-%m-%d %H:%M:%S",
+                log_colors={
+                    'DEBUG': 'cyan',
+                    'INFO': 'green',
+                    'WARNING': 'yellow',
+                    'ERROR': 'red',
+                    'CRITICAL': 'bold_red',
+                }
+            )
+        else:
+            log_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(log_formatter)
         file_handler = logging.FileHandler("embedding_processing.log", encoding="utf-8")
@@ -61,7 +82,12 @@ class EmbeddingProcessor:
         """Metni embedding vektörüne dönüştürür."""
         self.logger.info("🧠 Metin embedding işlemi başlatıldı.")
 
-        if self.embedding_model.startswith("text-embedding-ada"):
+        ollama_embedding = self.ollama.generate_embedding(text)
+        if ollama_embedding:
+            self.logger.info("✅ Ollama embedding üretildi.")
+            return np.array(ollama_embedding, dtype=np.float32)
+
+        if openai and self.embedding_model.startswith("text-embedding-ada"):
             try:
                 response = openai.Embedding.create(input=text, model=self.embedding_model)
                 embedding_vector = response["data"][0]["embedding"]
@@ -69,12 +95,15 @@ class EmbeddingProcessor:
             except Exception as e:
                 self.logger.error(f"❌ OpenAI embedding hatası: {e}")
                 return None
-        else:
-            self.logger.warning("⚠ Alternatif embedding modelleri desteklenmelidir!")
-            return None
+
+        self.logger.warning("⚠ Embedding üretilemedi (Ollama/OpenAI erişimi yok).")
+        return None
 
     def save_embedding_to_chromadb(self, doc_id, embedding):
         """Embedding vektörünü ChromaDB'ye kaydeder."""
+        if self.chroma_client is None:
+            self.logger.warning("⚠ ChromaDB yok, embedding kaydı atlandı.")
+            return
         self.logger.info(f"💾 Embedding ChromaDB'ye kaydediliyor: {doc_id}")
         collection = self.chroma_client.get_or_create_collection(name="embeddings")
         collection.add(ids=[doc_id], embeddings=[embedding.tolist()])
@@ -82,6 +111,9 @@ class EmbeddingProcessor:
 
     def save_embedding_to_redis(self, doc_id, embedding):
         """Embedding vektörünü Redis'e kaydeder."""
+        if self.redis_client is None:
+            self.logger.warning("⚠ Redis yok, embedding kaydı atlandı.")
+            return
         self.logger.info(f"💾 Embedding Redis'e kaydediliyor: {doc_id}")
         self.redis_client.set(doc_id, np.array(embedding).tobytes())
         self.logger.info("✅ Embedding Redis'e başarıyla kaydedildi.")

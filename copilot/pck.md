@@ -73,3 +73,23 @@
 ### `rest_api.py` (Güncel Not)
 - `FineTuning` / `yapay_zeka_finetuning` import sözleşmesi güvenli fallback ile ele alındı.
 - `/status` endpoint smoke testte 200 döndü.
+
+## 2026-02-23 / Ollama Entegrasyon Ekleri
+
+### `ollama_client.py`
+- Amaç: Ollama HTTP API istemcisi.
+- Sınıflar:
+  - `OllamaClient`
+- Metotlar:
+  - `generate_text(prompt, model=None)`: `/api/generate` üzerinden yanıt üretir.
+  - `generate_embedding(text, model=None)`: `/api/embeddings` üzerinden vektör üretir.
+
+### `embeddingmodule.py` (Güncel Not)
+- `EmbeddingProcessor.generate_embedding(text)` artık Ollama-first çalışır.
+- OpenAI yolu yalnızca ikincil fallback olarak korunur.
+- Chroma/Redis yoksa kayıt metotları crash yerine uyarı verip geçer.
+
+### `rag_pipeline.py` (Güncel Not)
+- `_normalize_results(result_obj)` eklendi.
+- `retrieve_data(query)` içinde Retrieve sonuçları normalize edilir, FAISS sorgusu için Ollama embedding kullanılır.
+- `generate_response(query)` içinde bağlamdan prompt üretilip Ollama LLM ile yanıt denenir; başarısızsa güvenli fallback döner.

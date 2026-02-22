@@ -12,3 +12,10 @@
 - Çekirdek modüllerde opsiyonel bağımlılık fallback'ı eklendi (`colorlog`, `dotenv`, `chromadb`, `redis`, `faiss`) ve import-time çökmesi engellendi.
 - Smoke test sonucu: `rest_api` için `/status` endpointi test client üzerinden `200 {'status': 'API çalışıyor'}` döndü.
 - Ortam notu: Python 3.14 + `chromadb` kombinasyonunda Pydantic V1 uyumsuzluk uyarısı/riski var; Chroma yolu geçici olarak opsiyonel tutuldu.
+
+## 2026-02-23 / Ollama-Aktivasyon
+- `ollama_client.py` eklendi: `/api/embeddings` ve `/api/generate` çağrılarını yapan lokal istemci.
+- `embeddingmodule.py` güncellendi: embedding üretiminde Ollama birincil yol, OpenAI ikincil fallback olarak düzenlendi.
+- `rag_pipeline.py` güncellendi: sonuç normalizasyonu eklendi, FAISS sorgusu için Ollama embedding kullanıldı, yanıt üretimi Ollama prompt tabanına taşındı.
+- Doğrulama: import smoke test başarılı (`OK_OLLAMA_WIRING_IMPORTS`).
+- Doğrulama: RAG çalışma testi crash olmadan döndü; `retrieve` servisi kapalı olduğunda güvenli fallback mesajı üretti.

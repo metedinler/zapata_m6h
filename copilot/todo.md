@@ -15,3 +15,7 @@
 - [x] P0: Konsol/API smoke test (`/status`) - BİTTİ
 - [ ] P1: Python 3.14 uyumluluğu için ChromaDB kalıcı çözüm (pin/downgrade stratejisi)
 - [ ] P1: Ollama embedding/LLM çağrılarının aktif kullanımı (OpenAI fallback yerine lokal öncelik)
+
+## 2026-02-23 / Sprint-1 Güncelleme
+- [x] P1: Ollama embedding/LLM çağrılarının aktif kullanımı (OpenAI fallback yerine lokal öncelik) - BİTTİ
+- [ ] P1: Retrieve servisini `127.0.0.1:8000` üzerinde ayağa alıp gerçek bağlamlı RAG yanıtını doğrulama
