@@ -32,3 +32,7 @@
 - Tüm endpointler başarısızsa artık exception yerine boş liste dönüyor (crash yerine güvenli davranış).
 - `rest_api.py` içine `/query` alias endpoint eklendi (geriye dönük sözleşme uyumu).
 - Doğrulama: Flask test client ile `/query` çağrısı `200` ve `{"results": ...}` yapısı döndü.
+
+## 2026-02-23 / Ortam Standardizasyonu
+- `.env.example` dosyası eklendi ve güncellendi.
+- Ollama + OpenClaw + Zotero + Retrieve + Redis anahtarları tek yerde örneklenerek yeni kurulum akışı sadeleştirildi.
