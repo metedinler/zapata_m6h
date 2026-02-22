@@ -93,6 +93,12 @@ def retrieve_documents_api():
     results = retrieve_documents(query)
     return jsonify({"results": results}), 200
 
+
+@app.route("/query", methods=["POST"])
+def query_alias_api():
+    """RetrieverIntegration geriye dönük uyumluluk endpointi."""
+    return retrieve_documents_api()
+
 # 📌 6️⃣ ChromaDB Araması
 @app.route("/search/chromadb", methods=["POST"])
 def search_in_chromadb():

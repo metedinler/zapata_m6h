@@ -57,14 +57,22 @@ class RetrieverIntegration:
 
     def send_query(self, query):
         """Retrieve API'ye sorgu gönderir."""
-        try:
-            response = requests.post(f"{self.retrieve_api_url}/query", json={"query": query})
-            response.raise_for_status()
-            self.logger.info(f"✅ Retrieve sorgusu başarıyla gönderildi: {query}")
-            return response.json()
-        except requests.RequestException as e:
-            self.logger.error(f"❌ Retrieve API hatası: {e}")
-            return None
+        endpoints = ["/query", "/retrieve"]
+        for endpoint in endpoints:
+            try:
+                response = requests.post(
+                    f"{self.retrieve_api_url}{endpoint}",
+                    json={"query": query},
+                    timeout=8,
+                )
+                response.raise_for_status()
+                self.logger.info(f"✅ Retrieve sorgusu başarıyla gönderildi: {query} ({endpoint})")
+                return response.json()
+            except requests.RequestException:
+                continue
+
+        self.logger.warning("⚠️ Retrieve API erişilemedi, boş sonuç dönülüyor.")
+        return []
 
 
 def retrieve_documents(query, top_k=5):

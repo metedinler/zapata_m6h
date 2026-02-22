@@ -30,6 +30,10 @@
   - `setup_logging()`
   - `send_query(query)`
 
+### `retriever_integration.py` (2026-02-23 Not)
+- `send_query(query)` endpoint fallback içerir: `/query` -> `/retrieve`.
+- Erişim yoksa exception fırlatmak yerine boş liste döndürür.
+
 ### `rest_api.py`
 - Amaç: Flask endpoint'leri (durum, retrieval, arama, eğitim tetikleme).
 - Not: Dosyada import sözleşmesi tutarlılığı korunmalıdır; endpoint URL'leri stabil kalmalıdır.
@@ -73,6 +77,9 @@
 ### `rest_api.py` (Güncel Not)
 - `FineTuning` / `yapay_zeka_finetuning` import sözleşmesi güvenli fallback ile ele alındı.
 - `/status` endpoint smoke testte 200 döndü.
+
+### `rest_api.py` (2026-02-23 Not)
+- `/query` alias endpointi eklendi; `/retrieve` ile aynı sözleşmeyi döndürür.
 
 ## 2026-02-23 / Ollama Entegrasyon Ekleri
 

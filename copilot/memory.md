@@ -26,3 +26,9 @@
 - `rag_pipeline.py` içinde üretim sırası `OpenClaw -> Ollama -> güvenli fallback` olarak güncellendi.
 - Doğrulama: `OK_OPENCLAW_WIRING_IMPORTS` import testi başarılı.
 - Doğrulama: runtime testte OpenClaw/ Retrieve erişilemezken uygulama düşmeden fallback yanıtı döndürdü.
+
+## 2026-02-23 / Retrieve-Sözleşme Güçlendirme
+- `retriever_integration.py` içinde endpoint fallback eklendi: önce `/query`, sonra `/retrieve` deneniyor.
+- Tüm endpointler başarısızsa artık exception yerine boş liste dönüyor (crash yerine güvenli davranış).
+- `rest_api.py` içine `/query` alias endpoint eklendi (geriye dönük sözleşme uyumu).
+- Doğrulama: Flask test client ile `/query` çağrısı `200` ve `{"results": ...}` yapısı döndü.

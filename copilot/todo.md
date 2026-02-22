@@ -23,3 +23,7 @@
 ## 2026-02-23 / Sprint-1 OpenClaw Güncelleme
 - [x] P1: OpenClaw orkestrasyon temas noktalarının teknik tasarımı - BİTTİ
 - [ ] P1: OpenClaw gateway canlı endpoint ile entegrasyon doğrulaması (OPENCLAW_ENABLED=true)
+
+## 2026-02-23 / Sprint-1 Retrieve Güncelleme
+- [x] P1: Retrieve sözleşmesinin `/query` ve `/retrieve` uyumluluğu - BİTTİ
+- [ ] P1: Harici retrieve servisi canlıyken gerçek sonuç kalitesi doğrulaması
