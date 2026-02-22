@@ -60,3 +60,10 @@
 - `configmodule.py` içine `validate_runtime_config()` eklendi; placeholder/missing kritik ayarlar startup'ta uyarı loglar.
 - `run_local_stack.ps1` eklendi; Ollama + Retrieve API + Zapata REST API'yi tek komutla başlatır ve sağlık durumlarını raporlar.
 - Çalıştırma sonucu: `11434`, `8000`, `5000` endpointleri aynı anda `UP 200` doğrulandı.
+
+## 2026-02-23 / Manuel Fallback Geri Ekleme
+- Kullanıcı isteğiyle `configmodule.py` içine manuel credential fallback slotları geri eklendi:
+	- `MANUAL_OPENAI_API_KEY`
+	- `MANUAL_ZOTERO_API_KEY`
+	- `MANUAL_ZOTERO_USER_ID`
+- Yükleme sırası env-first, manuel slot ikinci kaynak olacak şekilde güncellendi.

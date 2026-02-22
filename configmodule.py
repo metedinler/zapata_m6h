@@ -38,6 +38,11 @@ except Exception:
     redis = None
 import sqlite3
 
+# Manuel fallback alanları (resimden bulduğun değerleri lokalde buraya yazabilirsin)
+MANUAL_OPENAI_API_KEY = ""
+MANUAL_ZOTERO_API_KEY = ""
+MANUAL_ZOTERO_USER_ID = ""
+
 class Config:
     def __init__(self):
         """Konfigürasyon sınıfı, tüm sistem ayarlarını yükler ve yönetir."""
@@ -59,9 +64,9 @@ class Config:
         self.CHROMA_DB_PATH = Path(os.getenv("CHROMA_DB_PATH", r"C:\Users\mete\Zotero\zotai\chroma_db"))
 
         # 📌 API Ayarları
-        self.OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-        self.ZOTERO_API_KEY = os.getenv("ZOTERO_API_KEY", "")
-        self.ZOTERO_USER_ID = os.getenv("ZOTERO_USER_ID", "your_zotero_user_id")
+        self.OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", MANUAL_OPENAI_API_KEY)
+        self.ZOTERO_API_KEY = os.getenv("ZOTERO_API_KEY", MANUAL_ZOTERO_API_KEY)
+        self.ZOTERO_USER_ID = os.getenv("ZOTERO_USER_ID", MANUAL_ZOTERO_USER_ID or "your_zotero_user_id")
         self.ZOTERO_API_URL = f"https://api.zotero.org/users/{self.ZOTERO_USER_ID}/items"
         self.RETRIEVE_API_URL = os.getenv("RETRIEVE_API_URL", "http://127.0.0.1:8000")
         self.ZAPATA_REST_API_URL = os.getenv("ZAPATA_REST_API_URL", "http://127.0.0.1:5000")

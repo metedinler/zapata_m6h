@@ -81,6 +81,13 @@
 ### `configmodule.py` (2026-02-23 Operasyon Notu)
 - `validate_runtime_config()` metodu startup'ta kritik ayarların placeholder/boş durumunu uyarı olarak loglar.
 
+### `configmodule.py` (2026-02-23 Kullanıcı Talebi Notu)
+- Manuel fallback değişkenleri:
+  - `MANUAL_OPENAI_API_KEY`
+  - `MANUAL_ZOTERO_API_KEY`
+  - `MANUAL_ZOTERO_USER_ID`
+- Bu alanlar env yoksa ikinci kaynak olarak kullanılır.
+
 ### `rest_api.py` (Güncel Not)
 - `FineTuning` / `yapay_zeka_finetuning` import sözleşmesi güvenli fallback ile ele alındı.
 - `/status` endpoint smoke testte 200 döndü.

@@ -45,3 +45,6 @@
 ## 2026-02-23 / Sprint-1 Operasyonel Otomasyon
 - [x] P1: Lokal stack tek komut başlatma otomasyonu (`run_local_stack.ps1`) - BİTTİ
 - [ ] P1: Zotero credentials aktif olduktan sonra tam E2E (Zotero -> Retrieve -> RAG) doğrulama
+
+## 2026-02-23 / Sprint-1 Kullanıcı Talebi
+- [x] P1: `configmodule.py` manuel fallback slotlarını geri ekleme - BİTTİ
