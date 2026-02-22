@@ -41,3 +41,7 @@
 ## 2026-02-23 / Sprint-1 Kimlik Bilgisi Aktivasyonu
 - [ ] P1: `.env` içinden `ZOTERO_API_KEY` ve `ZOTERO_USER_ID` runtime'a yüklenmesini doğrulama
 - [ ] P1: Zotero'dan en az 1 kayıt çekip RAG bağlamına ekleme
+
+## 2026-02-23 / Sprint-1 Operasyonel Otomasyon
+- [x] P1: Lokal stack tek komut başlatma otomasyonu (`run_local_stack.ps1`) - BİTTİ
+- [ ] P1: Zotero credentials aktif olduktan sonra tam E2E (Zotero -> Retrieve -> RAG) doğrulama

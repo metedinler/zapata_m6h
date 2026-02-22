@@ -32,3 +32,7 @@
 ## 2026-02-23 / Retrieve Yerel Servis Notu
 - `retrieve_api.py` ile 8000 portunda bağımsız retrieval servisi çalışıyor.
 - DB içinde uygun kayıt yoksa `/query` doğal olarak boş sonuç döndürür (sahte veri üretilmez).
+
+## 2026-02-23 / Stack Komutu
+- Lokal servisleri toplu başlatma komutu: `run_local_stack.ps1`.
+- Mevcut tek blokaj: `.env` içinde Zotero anahtarları hâlâ placeholder.

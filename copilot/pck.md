@@ -78,6 +78,9 @@
 - `OPENAI_API_KEY`, `ZOTERO_API_KEY`, `ZOTERO_USER_ID` için hardcoded credential fallback kullanılmaz.
 - Bu alanların kaynak-of-truth'u environment/.env dosyasıdır.
 
+### `configmodule.py` (2026-02-23 Operasyon Notu)
+- `validate_runtime_config()` metodu startup'ta kritik ayarların placeholder/boş durumunu uyarı olarak loglar.
+
 ### `rest_api.py` (Güncel Not)
 - `FineTuning` / `yapay_zeka_finetuning` import sözleşmesi güvenli fallback ile ele alındı.
 - `/status` endpoint smoke testte 200 döndü.
@@ -127,6 +130,10 @@
   - `GET /status`
   - `POST /query`
   - `POST /retrieve` (alias)
+
+### `run_local_stack.ps1`
+- Amaç: Ollama + Retrieve API + Zapata REST API süreçlerini tek komutta başlatmak.
+- Çıktı: 11434/8000/5000 sağlık kodlarını raporlar.
 
 ### `rag_pipeline.py` (Sıra Güncellemesi)
 - Yanıt üretim sırası: `OpenClaw -> Ollama -> güvenli fallback metni`.

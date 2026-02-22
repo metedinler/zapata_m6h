@@ -55,3 +55,8 @@
 - SQLite tablo/kolon keşfiyle gerçek veri üzerinde LIKE tabanlı arama yapısı kuruldu.
 - Canlı doğrulama: `http://127.0.0.1:8000/status -> 200`.
 - Zincir doğrulama: `RetrieverIntegration` artık `/query` çağrısını başarıyla yaptı ve RAG akışı canlı üretimle tamamlandı.
+
+## 2026-02-23 / Operasyonel Stack Otomasyonu
+- `configmodule.py` içine `validate_runtime_config()` eklendi; placeholder/missing kritik ayarlar startup'ta uyarı loglar.
+- `run_local_stack.ps1` eklendi; Ollama + Retrieve API + Zapata REST API'yi tek komutla başlatır ve sağlık durumlarını raporlar.
+- Çalıştırma sonucu: `11434`, `8000`, `5000` endpointleri aynı anda `UP 200` doğrulandı.

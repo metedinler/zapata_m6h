@@ -116,6 +116,9 @@ class Config:
         # 📌 Loglama sistemini başlat
         self.setup_logging()
 
+        # 📌 Kritik ayarları doğrula
+        self.validate_runtime_config()
+
         # 📌 ChromaDB bağlantısını oluştur
         self.chroma_client = chromadb.PersistentClient(path=str(self.CHROMA_DB_PATH)) if chromadb else None
 
@@ -174,6 +177,22 @@ class Config:
     def get_max_workers(self):
         """Maksimum işlemci işçi sayısını döndürür."""
         return self.MAX_WORKERS
+
+    def validate_runtime_config(self):
+        """Kritik konfigürasyon alanlarını doğrular ve placeholder durumlarını loglar."""
+        try:
+            if not self.ZOTERO_API_KEY or self.ZOTERO_API_KEY == "your_zotero_api_key":
+                self.logger.warning("⚠ ZOTERO_API_KEY ayarlanmamış veya placeholder değer içeriyor.")
+            if not self.ZOTERO_USER_ID or self.ZOTERO_USER_ID == "your_zotero_user_id":
+                self.logger.warning("⚠ ZOTERO_USER_ID ayarlanmamış veya placeholder değer içeriyor.")
+            if self.OPENCLAW_ENABLED and not self.OPENCLAW_API_URL:
+                self.logger.warning("⚠ OPENCLAW_ENABLED aktif ancak OPENCLAW_API_URL boş.")
+            if not self.RETRIEVE_API_URL:
+                self.logger.warning("⚠ RETRIEVE_API_URL boş, retrieve entegrasyonu çalışmayabilir.")
+            if not self.OLLAMA_BASE_URL:
+                self.logger.warning("⚠ OLLAMA_BASE_URL boş, yerel model çağrıları çalışmayabilir.")
+        except Exception:
+            pass
 
 # 📌 Global konfigürasyon nesnesi
 config = Config()
