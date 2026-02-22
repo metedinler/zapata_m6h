@@ -64,9 +64,11 @@ class Config:
         self.CHROMA_DB_PATH = Path(os.getenv("CHROMA_DB_PATH", r"C:\Users\mete\Zotero\zotai\chroma_db"))
 
         # 📌 API Ayarları
-        self.OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", MANUAL_OPENAI_API_KEY)
-        self.ZOTERO_API_KEY = os.getenv("ZOTERO_API_KEY", MANUAL_ZOTERO_API_KEY)
-        self.ZOTERO_USER_ID = os.getenv("ZOTERO_USER_ID", MANUAL_ZOTERO_USER_ID or "your_zotero_user_id")
+        self.OPENAI_API_KEY = self._pick_value(os.getenv("OPENAI_API_KEY", ""), MANUAL_OPENAI_API_KEY, ["", "your_openai_api_key"])
+        self.ZOTERO_API_KEY = self._pick_value(os.getenv("ZOTERO_API_KEY", ""), MANUAL_ZOTERO_API_KEY, ["", "your_zotero_api_key"])
+        self.ZOTERO_USER_ID = self._pick_value(os.getenv("ZOTERO_USER_ID", ""), MANUAL_ZOTERO_USER_ID, ["", "your_zotero_user_id"])
+        if not self.ZOTERO_USER_ID:
+            self.ZOTERO_USER_ID = "your_zotero_user_id"
         self.ZOTERO_API_URL = f"https://api.zotero.org/users/{self.ZOTERO_USER_ID}/items"
         self.RETRIEVE_API_URL = os.getenv("RETRIEVE_API_URL", "http://127.0.0.1:8000")
         self.ZAPATA_REST_API_URL = os.getenv("ZAPATA_REST_API_URL", "http://127.0.0.1:5000")
@@ -182,6 +184,14 @@ class Config:
     def get_max_workers(self):
         """Maksimum işlemci işçi sayısını döndürür."""
         return self.MAX_WORKERS
+
+    def _pick_value(self, env_value, manual_value, placeholders):
+        """Placeholder ise manuel fallback değerini seçer."""
+        if env_value not in placeholders:
+            return env_value
+        if manual_value not in placeholders:
+            return manual_value
+        return env_value
 
     def validate_runtime_config(self):
         """Kritik konfigürasyon alanlarını doğrular ve placeholder durumlarını loglar."""

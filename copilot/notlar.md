@@ -36,3 +36,7 @@
 ## 2026-02-23 / Stack Komutu
 - Lokal servisleri toplu başlatma komutu: `run_local_stack.ps1`.
 - Mevcut tek blokaj: `.env` içinde Zotero anahtarları hâlâ placeholder.
+
+## 2026-02-23 / Blokaj Çözümü
+- `.env` placeholder olsa bile `configmodule` seçici mantığı manuel fallback'e düşecek şekilde düzeltildi.
+- Geçici test scripti silinmedi; kurala uygun olarak `kullanilmayanlar/` altına taşındı.

@@ -88,6 +88,14 @@
   - `MANUAL_ZOTERO_USER_ID`
 - Bu alanlar env yoksa ikinci kaynak olarak kullanılır.
 
+### `configmodule.py` (2026-02-23 Seçim Mantığı)
+- `_pick_value(env_value, manual_value, placeholders)` metodu eklendi.
+- Placeholder env değeri tespit edilirse manuel fallback değerini seçer.
+
+### `kullanilmayanlar/_tmp_e2e_check.py`
+- Amaç: Zotero -> SQLite -> Retrieve mini E2E test scripti (geçici araç).
+- Durum: Kalıcılık kuralı gereği silinmedi, kullanılmayanlar klasörüne taşındı.
+
 ### `rest_api.py` (Güncel Not)
 - `FineTuning` / `yapay_zeka_finetuning` import sözleşmesi güvenli fallback ile ele alındı.
 - `/status` endpoint smoke testte 200 döndü.

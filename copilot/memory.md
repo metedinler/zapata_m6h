@@ -61,6 +61,12 @@
 - `run_local_stack.ps1` eklendi; Ollama + Retrieve API + Zapata REST API'yi tek komutla başlatır ve sağlık durumlarını raporlar.
 - Çalıştırma sonucu: `11434`, `8000`, `5000` endpointleri aynı anda `UP 200` doğrulandı.
 
+## 2026-02-23 / Credential + E2E Başarılı Test
+- `configmodule.py` içinde env-placeholder durumunda manuel fallback seçimi düzeltildi.
+- Zotero canlı doğrulama geçti: `ZOTERO_STATUS 200`, `COUNT 1`.
+- Zotero'dan çekilen 1 kayıt yerel SQLite `retrieve_docs` tablosuna yazıldı ve `retrieve_api /query` üzerinden bulundu.
+- Sonraki canlı RAG çağrısı retrieval + Ollama hattında üretim yaptı (OpenClaw kapalıyken fallback zinciri doğru çalıştı).
+
 ## 2026-02-23 / Manuel Fallback Geri Ekleme
 - Kullanıcı isteğiyle `configmodule.py` içine manuel credential fallback slotları geri eklendi:
 	- `MANUAL_OPENAI_API_KEY`
