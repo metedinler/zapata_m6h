@@ -24,3 +24,7 @@
 - Ollama servisi başlatıldı ve `/api/tags` 200 döndü.
 - OpenClaw ve Retrieve endpointleri bu makinede kapalı olduğundan doğrudan orkestratör/retrieve doğrulaması yapılamadı.
 - Prompt sadeleştirme sonrası RAG çağrısı yerel modelden gerçek metin yanıtı üretti.
+
+## 2026-02-23 / Credential Notu
+- Kod içinde credential fallback tutulmayacak; yalnızca `.env`/environment kaynağı kullanılacak.
+- Runtime testinde Zotero bilgileri yüklenmediği için API çağrısı başarısız döndü; önce env yükleme kontrolü gerekiyor.

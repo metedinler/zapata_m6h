@@ -32,3 +32,7 @@
 - [x] P1: Ollama canlı model yanıtı ile RAG zinciri doğrulama - BİTTİ
 - [ ] P1: OpenClaw gateway canlıyken `OPENCLAW_ENABLED=True` ile orkestratör yanıt doğrulaması
 - [ ] P1: Retrieve canlıyken bağlamlı sonuç kalitesi ve rerank doğrulaması
+
+## 2026-02-23 / Sprint-1 Kimlik Bilgisi Aktivasyonu
+- [ ] P1: `.env` içinden `ZOTERO_API_KEY` ve `ZOTERO_USER_ID` runtime'a yüklenmesini doğrulama
+- [ ] P1: Zotero'dan en az 1 kayıt çekip RAG bağlamına ekleme

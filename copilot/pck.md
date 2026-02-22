@@ -74,6 +74,10 @@
 - Yeni alanlar: `RETRIEVE_API_URL`, `ZAPATA_REST_API_URL`, `ZOTERO_OUTPUT_FOLDER`, `OLLAMA_BASE_URL`, `OLLAMA_LLM_MODEL`, `OLLAMA_EMBED_MODEL`, fine-tune parametreleri.
 - Dayanıklılık: `dotenv/chromadb/redis/colorlog` yoksa import-time çökme yerine güvenli fallback.
 
+### `configmodule.py` (2026-02-23 Güvenlik Notu)
+- `OPENAI_API_KEY`, `ZOTERO_API_KEY`, `ZOTERO_USER_ID` için hardcoded credential fallback kullanılmaz.
+- Bu alanların kaynak-of-truth'u environment/.env dosyasıdır.
+
 ### `rest_api.py` (Güncel Not)
 - `FineTuning` / `yapay_zeka_finetuning` import sözleşmesi güvenli fallback ile ele alındı.
 - `/status` endpoint smoke testte 200 döndü.

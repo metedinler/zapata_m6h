@@ -43,3 +43,9 @@
 - RAG canlı çağrısı `OPENCLAW_ENABLED=True` bayrağı ile çalıştırıldı; OpenClaw ve Retrieve kapalı olduğu için zincir `Ollama` üzerinden tamamlandı.
 - `ollama_client.py` için yanıt süresi iyileştirmesi yapıldı (`num_predict` sınırı, düşük sıcaklık) ve timeout davranışı stabilize edildi.
 - Son canlı testte fallback metni yerine model yanıtı üretildi (yerel üretim başarılı).
+
+## 2026-02-23 / Güvenlik ve Kimlik Bilgisi Yükleme
+- `configmodule.py` içinde hardcoded credential fallback'ları kaldırıldı.
+- Kimlik bilgileri yalnızca environment/.env üzerinden yüklenir hale getirildi.
+- Canlı doğrulamada `ZOTERO_USER_ID` ve `ZOTERO_API_KEY` değerlerinin runtime'da boş/placeholder kaldığı görüldü; bu nedenle Zotero çağrısı `Invalid user ID` döndü.
+- Lokal servis durumu: `Ollama UP`, `OpenClaw DOWN`, `Retrieve DOWN`, `Zapata REST /status UP`.
