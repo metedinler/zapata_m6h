@@ -30,18 +30,29 @@
 # 📌 Embedding, yapısal haritalama ve bilimsel haritalama verilerini önbelleğe alır.
 # ==============================
 
-import redis
+try:
+    import redis
+except Exception:
+    redis = None
 import json
 import pickle
 import logging
-import colorlog
+try:
+    import colorlog
+except Exception:
+    colorlog = None
 from configmodule import config
 
 class RedisCache:
     def __init__(self):
         """Redis önbellek yönetimi için sınıf."""
         self.logger = self.setup_logging()
+        self.client = None
+        self.redis_client_str = None
         try:
+            if redis is None:
+                self.logger.warning("⚠️ redis paketi yüklü değil, RedisCache pasif çalışacak.")
+                return
             # decode_responses=False ile pickle için binary mod, True ile JSON için string mod
             self.client = redis.Redis(host=config.REDIS_HOST, port=config.REDIS_PORT, decode_responses=False)
             self.redis_client_str = redis.StrictRedis(host=config.REDIS_HOST, port=config.REDIS_PORT, decode_responses=True)
@@ -51,17 +62,20 @@ class RedisCache:
 
     def setup_logging(self):
         """Loglama sistemini kurar."""
-        log_formatter = colorlog.ColoredFormatter(
-            "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
-            datefmt="%Y-%m-%d %H:%M:%S",
-            log_colors={
-                'DEBUG': 'cyan',
-                'INFO': 'green',
-                'WARNING': 'yellow',
-                'ERROR': 'red',
-                'CRITICAL': 'bold_red',
-            }
-        )
+        if colorlog:
+            log_formatter = colorlog.ColoredFormatter(
+                "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
+                datefmt="%Y-%m-%d %H:%M:%S",
+                log_colors={
+                    'DEBUG': 'cyan',
+                    'INFO': 'green',
+                    'WARNING': 'yellow',
+                    'ERROR': 'red',
+                    'CRITICAL': 'bold_red',
+                }
+            )
+        else:
+            log_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(log_formatter)
         file_handler = logging.FileHandler("rediscache.log", encoding="utf-8")
@@ -76,6 +90,8 @@ class RedisCache:
     def store_embedding(self, key, embedding, ttl=None):
         """Embedding vektörünü Redis’e kaydeder (pickle ile)."""
         try:
+            if self.client is None:
+                return
             serialized = pickle.dumps(embedding)
             if ttl:
                 self.client.setex(key, ttl, serialized)
@@ -88,6 +104,8 @@ class RedisCache:
     def retrieve_embedding(self, key):
         """Redis’ten embedding verisini çeker (pickle ile)."""
         try:
+            if self.client is None:
+                return None
             data = self.client.get(key)
             if data:
                 self.logger.info(f"✅ Redis’ten embedding alındı: {key}")
@@ -101,6 +119,8 @@ class RedisCache:
     def cache_embedding(self, doc_id, embedding, ttl=86400):
         """Embedding verisini Redis’e kaydeder (JSON ile)."""
         try:
+            if self.redis_client_str is None:
+                return
             key = f"embedding:{doc_id}"
             self.redis_client_str.setex(key, ttl, json.dumps(embedding))
             self.logger.info(f"✅ Embedding verisi Redis’e kaydedildi: {key}")

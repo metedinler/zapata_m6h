@@ -24,35 +24,48 @@
 
 import re
 import sqlite3
-import chromadb
-import redis
+try:
+    import chromadb
+except Exception:
+    chromadb = None
+
+try:
+    import redis
+except Exception:
+    redis = None
 import json
 import logging
-import colorlog
+try:
+    import colorlog
+except Exception:
+    colorlog = None
 import concurrent.futures
 from configmodule import config
 
 class CitationMapper:
     def __init__(self):
         """Atıf haritalama işlemleri için sınıf."""
-        self.chroma_client = chromadb.PersistentClient(path=str(config.CHROMA_DB_PATH))
-        self.redis_client = redis.Redis(host=config.REDIS_HOST, port=config.REDIS_PORT, db=4, decode_responses=True)
+        self.chroma_client = chromadb.PersistentClient(path=str(config.CHROMA_DB_PATH)) if chromadb else None
+        self.redis_client = redis.Redis(host=config.REDIS_HOST, port=config.REDIS_PORT, db=4, decode_responses=True) if redis else None
         self.db_path = config.SQLITE_DB_PATH
         self.logger = self.setup_logging()
 
     def setup_logging(self):
         """Loglama sistemini kurar (colorlog ile konsol ve dosya loglaması)."""
-        log_formatter = colorlog.ColoredFormatter(
-            "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
-            datefmt="%Y-%m-%d %H:%M:%S",
-            log_colors={
-                'DEBUG': 'cyan',
-                'INFO': 'green',
-                'WARNING': 'yellow',
-                'ERROR': 'red',
-                'CRITICAL': 'bold_red',
-            }
-        )
+        if colorlog:
+            log_formatter = colorlog.ColoredFormatter(
+                "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
+                datefmt="%Y-%m-%d %H:%M:%S",
+                log_colors={
+                    'DEBUG': 'cyan',
+                    'INFO': 'green',
+                    'WARNING': 'yellow',
+                    'ERROR': 'red',
+                    'CRITICAL': 'bold_red',
+                }
+            )
+        else:
+            log_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(log_formatter)
         file_handler = logging.FileHandler("citation_mapping.log", encoding="utf-8")
@@ -167,6 +180,9 @@ class CitationMapper:
         self.logger.info(f"💾 Atıf haritası ChromaDB'ye kaydediliyor: {doc_id}")
         
         try:
+            if self.chroma_client is None:
+                self.logger.warning("⚠️ ChromaDB bağlantısı yok, atıf haritası ChromaDB'ye yazılamadı.")
+                return
             collection = self.chroma_client.get_or_create_collection(name="citation_mappings")
             for citation, reference in citation_map.items():
                 collection.add(
@@ -182,6 +198,9 @@ class CitationMapper:
         self.logger.info(f"💾 Atıf haritası Redis'e kaydediliyor: {doc_id}")
         
         try:
+            if self.redis_client is None:
+                self.logger.warning("⚠️ Redis bağlantısı yok, atıf haritası Redis'e yazılamadı.")
+                return
             redis_data = {citation: {"reference": reference, "text_parametre": text} for citation, reference in citation_map.items()}
             self.redis_client.set(f"citations:{doc_id}", json.dumps(redis_data))
             self.logger.info("✅ Atıf haritası Redis'e başarıyla kaydedildi.")
@@ -219,7 +238,7 @@ class CitationMapper:
         
         try:
             # Önce Redis'ten kontrol et
-            citation_data = self.redis_client.get(f"citations:{doc_id}")
+            citation_data = self.redis_client.get(f"citations:{doc_id}") if self.redis_client else None
             if citation_data:
                 self.logger.info("✅ Redis'ten atıf haritası alındı.")
                 return json.loads(citation_data)

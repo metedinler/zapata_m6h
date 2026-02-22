@@ -16,11 +16,26 @@
 
 import os
 import logging
-import colorlog
+try:
+    import colorlog
+except Exception:
+    colorlog = None
 from pathlib import Path
-from dotenv import load_dotenv
-import chromadb
-import redis
+try:
+    from dotenv import load_dotenv
+except Exception:
+    def load_dotenv(*args, **kwargs):
+        return False
+
+try:
+    import chromadb
+except Exception:
+    chromadb = None
+
+try:
+    import redis
+except Exception:
+    redis = None
 import sqlite3
 
 class Config:
@@ -48,6 +63,12 @@ class Config:
         self.ZOTERO_API_KEY = os.getenv("ZOTERO_API_KEY", "your_zotero_api_key")
         self.ZOTERO_USER_ID = os.getenv("ZOTERO_USER_ID", "your_zotero_user_id")
         self.ZOTERO_API_URL = f"https://api.zotero.org/users/{self.ZOTERO_USER_ID}/items"
+        self.RETRIEVE_API_URL = os.getenv("RETRIEVE_API_URL", "http://127.0.0.1:8000")
+        self.ZAPATA_REST_API_URL = os.getenv("ZAPATA_REST_API_URL", "http://127.0.0.1:5000")
+        self.ZOTERO_OUTPUT_FOLDER = Path(os.getenv("ZOTERO_OUTPUT_FOLDER", str(self.SUCCESS_DIR / "zotero_output")))
+        self.OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://127.0.0.1:11434")
+        self.OLLAMA_LLM_MODEL = os.getenv("OLLAMA_LLM_MODEL", "llama3.1:8b")
+        self.OLLAMA_EMBED_MODEL = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
 
         # 📌 PDF İşleme Ayarları
         self.PDF_TEXT_EXTRACTION_METHOD = os.getenv("PDF_TEXT_EXTRACTION_METHOD", "pdfplumber").lower()
@@ -60,6 +81,10 @@ class Config:
         self.PARAGRAPH_BASED_SPLIT = os.getenv("PARAGRAPH_BASED_SPLIT", "True").lower() == "true"
         self.MULTI_PROCESSING = os.getenv("MULTI_PROCESSING", "True").lower() == "true"
         self.MAX_WORKERS = int(os.getenv("MAX_WORKERS", "4"))
+        self.FINETUNE_BATCH_SIZE = int(os.getenv("FINETUNE_BATCH_SIZE", "4"))
+        self.FINETUNE_EPOCHS = int(os.getenv("FINETUNE_EPOCHS", "1"))
+        self.FINETUNE_LR = float(os.getenv("FINETUNE_LR", "2e-5"))
+        self.FINETUNE_OUTPUT_DIR = os.getenv("FINETUNE_OUTPUT_DIR", str(self.SUCCESS_DIR / "finetuned_models"))
 
         # 📌 Citation Mapping & Analiz Ayarları
         self.ENABLE_CITATION_MAPPING = os.getenv("ENABLE_CITATION_MAPPING", "True").lower() == "true"
@@ -90,10 +115,10 @@ class Config:
         self.setup_logging()
 
         # 📌 ChromaDB bağlantısını oluştur
-        self.chroma_client = chromadb.PersistentClient(path=str(self.CHROMA_DB_PATH))
+        self.chroma_client = chromadb.PersistentClient(path=str(self.CHROMA_DB_PATH)) if chromadb else None
 
         # 📌 Redis bağlantısını oluştur
-        self.redis_client = redis.StrictRedis(host=self.REDIS_HOST, port=self.REDIS_PORT, decode_responses=True)
+        self.redis_client = redis.StrictRedis(host=self.REDIS_HOST, port=self.REDIS_PORT, decode_responses=True) if redis else None
 
         # 📌 SQLite bağlantısını oluştur
         if self.USE_SQLITE:
@@ -109,23 +134,27 @@ class Config:
             self.TEMIZ_KAYNAKCA_DIZIN,
             self.CITATIONS_DIR,
             self.TABLES_DIR
+            ,self.ZOTERO_OUTPUT_FOLDER
         ]
         for directory in directories:
             directory.mkdir(parents=True, exist_ok=True)
 
     def setup_logging(self):
         """Loglama sistemini kurar."""
-        log_formatter = colorlog.ColoredFormatter(
-            "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
-            datefmt="%Y-%m-%d %H:%M:%S",
-            log_colors={
-                'DEBUG': 'cyan',
-                'INFO': 'green',
-                'WARNING': 'yellow',
-                'ERROR': 'red',
-                'CRITICAL': 'bold_red',
-            }
-        )
+        if colorlog:
+            log_formatter = colorlog.ColoredFormatter(
+                "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
+                datefmt="%Y-%m-%d %H:%M:%S",
+                log_colors={
+                    'DEBUG': 'cyan',
+                    'INFO': 'green',
+                    'WARNING': 'yellow',
+                    'ERROR': 'red',
+                    'CRITICAL': 'bold_red',
+                }
+            )
+        else:
+            log_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(log_formatter)
         file_handler = logging.FileHandler("pdf_processing.log", encoding="utf-8")

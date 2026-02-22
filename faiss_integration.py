@@ -17,11 +17,17 @@
 # 📌 Embedding tabanlı hızlı arama ve vektör indeksleme.
 # ==============================
 
-import faiss
+try:
+    import faiss
+except Exception:
+    faiss = None
 import numpy as np
 import json
 import logging
-import colorlog
+try:
+    import colorlog
+except Exception:
+    colorlog = None
 import sqlite3
 from configmodule import config
 from rediscache import RedisCache
@@ -31,23 +37,26 @@ class FAISSIntegration:
         """FAISS Entegrasyonu"""
         self.logger = self.setup_logging()
         self.dimension = dimension  # Vektör boyutu
-        self.index = faiss.IndexFlatL2(self.dimension)  # L2 mesafesiyle FAISS indeksi
+        self.index = faiss.IndexFlatL2(self.dimension) if faiss else None  # L2 mesafesiyle FAISS indeksi
         self.redis_cache = RedisCache()
         self.connection = self.create_db_connection()
 
     def setup_logging(self):
         """Loglama sistemini kurar."""
-        log_formatter = colorlog.ColoredFormatter(
-            "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
-            datefmt="%Y-%m-%d %H:%M:%S",
-            log_colors={
-                'DEBUG': 'cyan',
-                'INFO': 'green',
-                'WARNING': 'yellow',
-                'ERROR': 'red',
-                'CRITICAL': 'bold_red',
-            }
-        )
+        if colorlog:
+            log_formatter = colorlog.ColoredFormatter(
+                "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
+                datefmt="%Y-%m-%d %H:%M:%S",
+                log_colors={
+                    'DEBUG': 'cyan',
+                    'INFO': 'green',
+                    'WARNING': 'yellow',
+                    'ERROR': 'red',
+                    'CRITICAL': 'bold_red',
+                }
+            )
+        else:
+            log_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(log_formatter)
         file_handler = logging.FileHandler("faiss_integration.log", encoding="utf-8")
@@ -72,6 +81,9 @@ class FAISSIntegration:
     def add_embedding(self, doc_id, embedding):
         """Embedding verisini FAISS'e ekler."""
         try:
+            if self.index is None:
+                self.logger.warning("⚠️ FAISS yüklü değil, embedding FAISS'e eklenemedi.")
+                return
             embedding = np.array(embedding, dtype=np.float32).reshape(1, -1)
             self.index.add(embedding)
 
@@ -99,6 +111,9 @@ class FAISSIntegration:
     def search_similar(self, query_embedding, top_k=5):
         """Verilen embedding için FAISS üzerinde en benzer vektörleri arar."""
         try:
+            if self.index is None:
+                self.logger.warning("⚠️ FAISS yüklü değil, arama yapılamadı.")
+                return [], []
             query_embedding = np.array(query_embedding, dtype=np.float32).reshape(1, -1)
             distances, indices = self.index.search(query_embedding, top_k)
 
@@ -135,6 +150,20 @@ if __name__ == "__main__":
 
     print("✅ FAISS Entegrasyonu Tamamlandı!")
 # ==============================
+
+
+def search_faiss(query, top_k=5):
+    """REST API uyumluluğu için FAISS arama yardımcı fonksiyonu."""
+    faiss_integrator = FAISSIntegration()
+
+    if isinstance(query, (list, tuple, np.ndarray)):
+        results, distances = faiss_integrator.search_similar(query, top_k=top_k)
+        return {"indices": results or [], "distances": distances or []}
+
+    if isinstance(query, str):
+        return {"indices": [], "distances": [], "note": "Metin sorgu için önce embedding üretilmeli."}
+
+    return {"indices": [], "distances": []}
 
 # 📌 Yapılan Değişiklikler:
 # ✅ Pass ve dummy fonksiyonlar kaldırıldı, tüm kod çalışır hale getirildi.

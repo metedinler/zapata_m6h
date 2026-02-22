@@ -16,7 +16,10 @@
 
 import requests
 import logging
-import colorlog
+try:
+    import colorlog
+except Exception:
+    colorlog = None
 from configmodule import config
 
 class RetrieverIntegration:
@@ -27,17 +30,20 @@ class RetrieverIntegration:
 
     def setup_logging(self):
         """Loglama sistemini kurar."""
-        log_formatter = colorlog.ColoredFormatter(
-            "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
-            datefmt="%Y-%m-%d %H:%M:%S",
-            log_colors={
-                'DEBUG': 'cyan',
-                'INFO': 'green',
-                'WARNING': 'yellow',
-                'ERROR': 'red',
-                'CRITICAL': 'bold_red',
-            }
-        )
+        if colorlog:
+            log_formatter = colorlog.ColoredFormatter(
+                "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
+                datefmt="%Y-%m-%d %H:%M:%S",
+                log_colors={
+                    'DEBUG': 'cyan',
+                    'INFO': 'green',
+                    'WARNING': 'yellow',
+                    'ERROR': 'red',
+                    'CRITICAL': 'bold_red',
+                }
+            )
+        else:
+            log_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(log_formatter)
         file_handler = logging.FileHandler("retriever_integration.log", encoding="utf-8")
@@ -59,6 +65,27 @@ class RetrieverIntegration:
         except requests.RequestException as e:
             self.logger.error(f"❌ Retrieve API hatası: {e}")
             return None
+
+
+def retrieve_documents(query, top_k=5):
+    """REST API uyumluluğu için retrieve yardımcı fonksiyonu."""
+    retriever = RetrieverIntegration()
+    response = retriever.send_query(query)
+
+    if response is None:
+        return []
+
+    if isinstance(response, dict):
+        if isinstance(response.get("results"), list):
+            return response["results"][:top_k]
+        if isinstance(response.get("documents"), list):
+            return response["documents"][:top_k]
+        return [response]
+
+    if isinstance(response, list):
+        return response[:top_k]
+
+    return []
 
 # ==============================
 # ✅ Test Komutları:

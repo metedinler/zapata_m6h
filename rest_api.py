@@ -1,10 +1,23 @@
 from flask import Flask, request, jsonify
 import logging
-import redis
+try:
+    import redis
+except Exception:
+    redis = None
 import sqlite3
 import threading
 from configmodule import config
-from yapay_zeka_finetuning import train_selected_models
+
+try:
+    from FineTuning import train_selected_models
+except Exception:
+    try:
+        from yapay_zeka_finetuning import train_selected_models
+    except Exception:
+        def train_selected_models(model_list):
+            logging.warning("train_selected_models import edilemedi.")
+            redis_client.set("training_status", "Modül kullanılamıyor")
+
 from retriever_integration import retrieve_documents
 from citation_mapping import process_citations
 from chromadb_integration import search_chromadb
@@ -17,7 +30,7 @@ app = Flask(__name__)
 logging.basicConfig(filename="rest_api.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Redis Bağlantısı
-redis_client = redis.Redis(host=config.REDIS_HOST, port=config.REDIS_PORT, decode_responses=True)
+redis_client = redis.Redis(host=config.REDIS_HOST, port=config.REDIS_PORT, decode_responses=True) if redis else None
 
 # SQLite Bağlantısı
 def get_db_connection():
@@ -48,13 +61,13 @@ def start_training():
 # 📌 2️⃣ Eğitim Durumu Sorgulama
 @app.route("/train/status", methods=["GET"])
 def get_training_status():
-    status = redis_client.get("training_status")
+    status = redis_client.get("training_status") if redis_client else None
     return jsonify({"training_status": status or "Bilinmiyor"}), 200
 
 # 📌 3️⃣ Eğitim Sonuçlarını Alma
 @app.route("/train/results", methods=["GET"])
 def get_training_results():
-    results = redis_client.get("training_results")
+    results = redis_client.get("training_results") if redis_client else None
     if results:
         return jsonify({"training_results": results}), 200
     else:
@@ -105,7 +118,8 @@ def search_in_faiss():
 # 📌 8️⃣ Eğitim Sürecini Durdurma
 @app.route("/train/stop", methods=["POST"])
 def stop_training():
-    redis_client.set("training_status", "Durduruldu")
+    if redis_client:
+        redis_client.set("training_status", "Durduruldu")
     logging.info("📌 Model eğitimi durduruldu.")
     return jsonify({"status": "Eğitim süreci durduruldu."}), 200
 

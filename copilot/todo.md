@@ -9,3 +9,9 @@
 
 ## Kural
 - Tamamlanan görevler silinmez, yanına `BİTTİ` eklenir.
+
+## 2026-02-23 / Sprint-0 Güncelleme
+- [x] P0: Çalıştırılabilir iskelet (config + rest_api import zinciri) - BİTTİ
+- [x] P0: Konsol/API smoke test (`/status`) - BİTTİ
+- [ ] P1: Python 3.14 uyumluluğu için ChromaDB kalıcı çözüm (pin/downgrade stratejisi)
+- [ ] P1: Ollama embedding/LLM çağrılarının aktif kullanımı (OpenAI fallback yerine lokal öncelik)

@@ -53,3 +53,23 @@
 
 ## Kural
 - Bu dosya append-only kullanılacaktır. Var olan açıklamalar silinmez, yeni kayıtlar eklenir.
+
+## 2026-02-23 / İskelet Stabilizasyon Ekleri
+
+### `chromadb_integration.py`
+- Amaç: REST/API uyumluluğu için minimal Chroma arama adapter'ı.
+- Fonksiyonlar:
+  - `search_chromadb(query, top_k=5)`: Chroma uygun ise sonuç döner, uygun değilse boş+error yapısı döner.
+
+### `citation_mapping.py`
+- Amaç: `rest_api.py` için beklenen `process_citations` imzasını sağlayan köprü modül.
+- Fonksiyonlar:
+  - `process_citations(doc_id='manual_doc', text='', reference_list=None)`: Atıf çıkarır/eşler, veri varsa depolama katmanlarına yazar.
+
+### `configmodule.py` (Güncel Not)
+- Yeni alanlar: `RETRIEVE_API_URL`, `ZAPATA_REST_API_URL`, `ZOTERO_OUTPUT_FOLDER`, `OLLAMA_BASE_URL`, `OLLAMA_LLM_MODEL`, `OLLAMA_EMBED_MODEL`, fine-tune parametreleri.
+- Dayanıklılık: `dotenv/chromadb/redis/colorlog` yoksa import-time çökme yerine güvenli fallback.
+
+### `rest_api.py` (Güncel Not)
+- `FineTuning` / `yapay_zeka_finetuning` import sözleşmesi güvenli fallback ile ele alındı.
+- `/status` endpoint smoke testte 200 döndü.
