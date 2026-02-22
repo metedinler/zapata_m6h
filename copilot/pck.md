@@ -91,6 +91,10 @@
   - `generate_text(prompt, model=None)`: `/api/generate` üzerinden yanıt üretir.
   - `generate_embedding(text, model=None)`: `/api/embeddings` üzerinden vektör üretir.
 
+### `ollama_client.py` (2026-02-23 Canlı Ayar)
+- `generate_text` içinde `options.num_predict=96` ve `temperature=0.2` uygulanır (uzayan çağrıları sınırlandırmak için).
+- Timeout 120 sn tutulur.
+
 ### `embeddingmodule.py` (Güncel Not)
 - `EmbeddingProcessor.generate_embedding(text)` artık Ollama-first çalışır.
 - OpenAI yolu yalnızca ikincil fallback olarak korunur.
@@ -112,3 +116,6 @@
 
 ### `rag_pipeline.py` (Sıra Güncellemesi)
 - Yanıt üretim sırası: `OpenClaw -> Ollama -> güvenli fallback metni`.
+
+### `rag_pipeline.py` (2026-02-23 Canlı Ayar)
+- FAISS sonucu yalnızca geçerli indeks varsa bağlama eklenir (`-1` placeholder sonuçlar prompt'a dahil edilmez).

@@ -19,3 +19,8 @@
 ## 2026-02-23 / OpenClaw Test Notu
 - OpenClaw istemcisi üç endpoint'i sırayla deniyor; başarısız olursa sessizce Ollama yoluna geri dönüyor.
 - `OPENCLAW_ENABLED=false` varsayılanı ile mevcut çalışır akış korunuyor.
+
+## 2026-02-23 / Canlı Çalıştırma Notu
+- Ollama servisi başlatıldı ve `/api/tags` 200 döndü.
+- OpenClaw ve Retrieve endpointleri bu makinede kapalı olduğundan doğrudan orkestratör/retrieve doğrulaması yapılamadı.
+- Prompt sadeleştirme sonrası RAG çağrısı yerel modelden gerçek metin yanıtı üretti.

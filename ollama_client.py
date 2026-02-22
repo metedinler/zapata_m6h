@@ -8,14 +8,19 @@ class OllamaClient:
         self.base_url = str(config.OLLAMA_BASE_URL).rstrip("/")
         self.llm_model = config.OLLAMA_LLM_MODEL
         self.embed_model = config.OLLAMA_EMBED_MODEL
-        self.timeout = 30
+        self.timeout = 120
 
     def generate_text(self, prompt, model=None):
         selected_model = model or self.llm_model
         try:
             response = requests.post(
                 f"{self.base_url}/api/generate",
-                json={"model": selected_model, "prompt": prompt, "stream": False},
+                json={
+                    "model": selected_model,
+                    "prompt": prompt,
+                    "stream": False,
+                    "options": {"num_predict": 96, "temperature": 0.2},
+                },
                 timeout=self.timeout,
             )
             response.raise_for_status()

@@ -82,7 +82,9 @@ class RAGPipeline:
         if query_embedding:
             indices, distances = self.faiss.search_similar(query_embedding, top_k=5)
             if indices or distances:
-                faiss_results = [{"indices": indices, "distances": distances}]
+                idx_list = indices[0] if indices and isinstance(indices, list) and indices else []
+                if any(index >= 0 for index in idx_list):
+                    faiss_results = [{"indices": indices, "distances": distances}]
 
         combined_results = retrieve_results + faiss_results
         self.logger.info(f"✅ Retrieve ve FAISS sonuçları birleştirildi: {combined_results}")

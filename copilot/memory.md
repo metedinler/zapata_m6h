@@ -36,3 +36,10 @@
 ## 2026-02-23 / Ortam Standardizasyonu
 - `.env.example` dosyası eklendi ve güncellendi.
 - Ollama + OpenClaw + Zotero + Retrieve + Redis anahtarları tek yerde örneklenerek yeni kurulum akışı sadeleştirildi.
+
+## 2026-02-23 / Canlı Servis Testi
+- Servis sağlık kontrolü: `Ollama UP (11434)`, `OpenClaw DOWN (3000)`, `Retrieve DOWN (8000)`.
+- `ollama list` doğrulandı: `qwen2.5:3b`, `deepseek-r1:1.5b`, `nomic-embed-text`, `all-minilm` mevcut.
+- RAG canlı çağrısı `OPENCLAW_ENABLED=True` bayrağı ile çalıştırıldı; OpenClaw ve Retrieve kapalı olduğu için zincir `Ollama` üzerinden tamamlandı.
+- `ollama_client.py` için yanıt süresi iyileştirmesi yapıldı (`num_predict` sınırı, düşük sıcaklık) ve timeout davranışı stabilize edildi.
+- Son canlı testte fallback metni yerine model yanıtı üretildi (yerel üretim başarılı).
