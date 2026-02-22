@@ -49,3 +49,9 @@
 - Kimlik bilgileri yalnızca environment/.env üzerinden yüklenir hale getirildi.
 - Canlı doğrulamada `ZOTERO_USER_ID` ve `ZOTERO_API_KEY` değerlerinin runtime'da boş/placeholder kaldığı görüldü; bu nedenle Zotero çağrısı `Invalid user ID` döndü.
 - Lokal servis durumu: `Ollama UP`, `OpenClaw DOWN`, `Retrieve DOWN`, `Zapata REST /status UP`.
+
+## 2026-02-23 / Retrieve Yerelleştirme
+- `retrieve_api.py` eklendi (Flask, port 8000): `/status`, `/query`, `/retrieve` endpointleri.
+- SQLite tablo/kolon keşfiyle gerçek veri üzerinde LIKE tabanlı arama yapısı kuruldu.
+- Canlı doğrulama: `http://127.0.0.1:8000/status -> 200`.
+- Zincir doğrulama: `RetrieverIntegration` artık `/query` çağrısını başarıyla yaptı ve RAG akışı canlı üretimle tamamlandı.

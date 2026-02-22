@@ -28,6 +28,11 @@
 - [x] P1: Retrieve sözleşmesinin `/query` ve `/retrieve` uyumluluğu - BİTTİ
 - [ ] P1: Harici retrieve servisi canlıyken gerçek sonuç kalitesi doğrulaması
 
+## 2026-02-23 / Sprint-1 Retrieve Yerel Servis
+- [x] P1: Yerel `retrieve_api` (8000) ayağa alma ve sözleşme testi - BİTTİ
+- [x] P1: RAG zincirinde canlı retrieve çağrısı doğrulaması - BİTTİ
+- [ ] P1: Zotero credential yükleme tamamlandığında retrieve bağlam kalitesini artırma
+
 ## 2026-02-23 / Sprint-1 Canlı Test Güncelleme
 - [x] P1: Ollama canlı model yanıtı ile RAG zinciri doğrulama - BİTTİ
 - [ ] P1: OpenClaw gateway canlıyken `OPENCLAW_ENABLED=True` ile orkestratör yanıt doğrulaması

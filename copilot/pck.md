@@ -118,6 +118,16 @@
 - Metotlar:
   - `generate_with_context(query, context)`: OpenClaw endpointlerinden uygun yanıt alan ilk çağrıyı döndürür.
 
+### `retrieve_api.py`
+- Amaç: Yerel retrieval endpoint katmanı (port 8000).
+- Fonksiyonlar:
+  - `_discover_text_columns(connection)`: SQLite tablolarında metin kolonlarını keşfeder.
+  - `_search_sqlite(query_text, top_k=5)`: Keşfedilen metin kolonlarında LIKE araması yapar.
+- Endpointler:
+  - `GET /status`
+  - `POST /query`
+  - `POST /retrieve` (alias)
+
 ### `rag_pipeline.py` (Sıra Güncellemesi)
 - Yanıt üretim sırası: `OpenClaw -> Ollama -> güvenli fallback metni`.
 

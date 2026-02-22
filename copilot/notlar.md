@@ -28,3 +28,7 @@
 ## 2026-02-23 / Credential Notu
 - Kod içinde credential fallback tutulmayacak; yalnızca `.env`/environment kaynağı kullanılacak.
 - Runtime testinde Zotero bilgileri yüklenmediği için API çağrısı başarısız döndü; önce env yükleme kontrolü gerekiyor.
+
+## 2026-02-23 / Retrieve Yerel Servis Notu
+- `retrieve_api.py` ile 8000 portunda bağımsız retrieval servisi çalışıyor.
+- DB içinde uygun kayıt yoksa `/query` doğal olarak boş sonuç döndürür (sahte veri üretilmez).
