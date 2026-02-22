@@ -69,6 +69,8 @@ class Config:
         self.OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://127.0.0.1:11434")
         self.OLLAMA_LLM_MODEL = os.getenv("OLLAMA_LLM_MODEL", "llama3.1:8b")
         self.OLLAMA_EMBED_MODEL = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
+        self.OPENCLAW_ENABLED = os.getenv("OPENCLAW_ENABLED", "False").lower() == "true"
+        self.OPENCLAW_API_URL = os.getenv("OPENCLAW_API_URL", "http://127.0.0.1:3000")
 
         # 📌 PDF İşleme Ayarları
         self.PDF_TEXT_EXTRACTION_METHOD = os.getenv("PDF_TEXT_EXTRACTION_METHOD", "pdfplumber").lower()

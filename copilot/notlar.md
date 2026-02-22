@@ -15,3 +15,7 @@
 - `rag_pipeline.generate_response('test')` çağrısı crash olmadan tamamlandı.
 - Retrieve servisi kapalı olduğunda (`127.0.0.1:8000 refused`) pipeline güvenli fallback yanıtı üretiyor.
 - Ollama servisi kapalı/erişilemez durumda ise yanıt üretimi uygulamayı düşürmeden metinsel fallback ile kapanıyor.
+
+## 2026-02-23 / OpenClaw Test Notu
+- OpenClaw istemcisi üç endpoint'i sırayla deniyor; başarısız olursa sessizce Ollama yoluna geri dönüyor.
+- `OPENCLAW_ENABLED=false` varsayılanı ile mevcut çalışır akış korunuyor.

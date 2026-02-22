@@ -93,3 +93,15 @@
 - `_normalize_results(result_obj)` eklendi.
 - `retrieve_data(query)` içinde Retrieve sonuçları normalize edilir, FAISS sorgusu için Ollama embedding kullanılır.
 - `generate_response(query)` içinde bağlamdan prompt üretilip Ollama LLM ile yanıt denenir; başarısızsa güvenli fallback döner.
+
+## 2026-02-23 / OpenClaw Ekleri
+
+### `openclaw_client.py`
+- Amaç: OpenClaw orkestratörüne bağlanıp RAG yanıtı alma.
+- Sınıflar:
+  - `OpenClawClient`
+- Metotlar:
+  - `generate_with_context(query, context)`: OpenClaw endpointlerinden uygun yanıt alan ilk çağrıyı döndürür.
+
+### `rag_pipeline.py` (Sıra Güncellemesi)
+- Yanıt üretim sırası: `OpenClaw -> Ollama -> güvenli fallback metni`.

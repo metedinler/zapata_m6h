@@ -22,6 +22,7 @@ from retriever_integration import RetrieverIntegration
 from faiss_integration import FAISSIntegration
 from configmodule import config
 from ollama_client import OllamaClient
+from openclaw_client import OpenClawClient
 
 class RAGPipeline:
     def __init__(self):
@@ -30,6 +31,7 @@ class RAGPipeline:
         self.retriever = RetrieverIntegration()
         self.faiss = FAISSIntegration()
         self.ollama = OllamaClient()
+        self.openclaw = OpenClawClient()
 
     def setup_logging(self):
         """Loglama sistemini kurar."""
@@ -98,7 +100,12 @@ class RAGPipeline:
             f"Bağlam:\n{context_text}\n"
         )
 
-        response = self.ollama.generate_text(prompt)
+        response = self.openclaw.generate_with_context(query=query, context=context_text)
+        if response:
+            self.logger.info("✅ Yanıt OpenClaw orkestratöründen alındı.")
+
+        if not response:
+            response = self.ollama.generate_text(prompt)
         if not response:
             response = f"🔍 {query} için bağlama dayalı yerel yanıt üretilemedi."
 

@@ -19,3 +19,7 @@
 ## 2026-02-23 / Sprint-1 Güncelleme
 - [x] P1: Ollama embedding/LLM çağrılarının aktif kullanımı (OpenAI fallback yerine lokal öncelik) - BİTTİ
 - [ ] P1: Retrieve servisini `127.0.0.1:8000` üzerinde ayağa alıp gerçek bağlamlı RAG yanıtını doğrulama
+
+## 2026-02-23 / Sprint-1 OpenClaw Güncelleme
+- [x] P1: OpenClaw orkestrasyon temas noktalarının teknik tasarımı - BİTTİ
+- [ ] P1: OpenClaw gateway canlı endpoint ile entegrasyon doğrulaması (OPENCLAW_ENABLED=true)

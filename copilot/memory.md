@@ -19,3 +19,10 @@
 - `rag_pipeline.py` güncellendi: sonuç normalizasyonu eklendi, FAISS sorgusu için Ollama embedding kullanıldı, yanıt üretimi Ollama prompt tabanına taşındı.
 - Doğrulama: import smoke test başarılı (`OK_OLLAMA_WIRING_IMPORTS`).
 - Doğrulama: RAG çalışma testi crash olmadan döndü; `retrieve` servisi kapalı olduğunda güvenli fallback mesajı üretti.
+
+## 2026-02-23 / OpenClaw-Köprü
+- `openclaw_client.py` eklendi; OpenClaw için çoklu endpoint denemeli (`/orchestrate`, `/rag/generate`, `/generate`) güvenli istemci yazıldı.
+- `configmodule.py` içine `OPENCLAW_ENABLED` ve `OPENCLAW_API_URL` eklendi.
+- `rag_pipeline.py` içinde üretim sırası `OpenClaw -> Ollama -> güvenli fallback` olarak güncellendi.
+- Doğrulama: `OK_OPENCLAW_WIRING_IMPORTS` import testi başarılı.
+- Doğrulama: runtime testte OpenClaw/ Retrieve erişilemezken uygulama düşmeden fallback yanıtı döndürdü.
