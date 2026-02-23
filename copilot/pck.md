@@ -155,3 +155,13 @@
 
 ### `rag_pipeline.py` (2026-02-23 Canlı Ayar)
 - FAISS sonucu yalnızca geçerli indeks varsa bağlama eklenir (`-1` placeholder sonuçlar prompt'a dahil edilmez).
+
+## 2026-02-23 / Secret-safe Konfigürasyon
+
+### `configmodule.py` (2026-02-23 Secret-safe)
+- `load_dotenv()` sonrası `load_dotenv(".env.local", override=True)` uygulanır.
+- Böylece repo içi placeholder değerler, yerel gizli değerlerle runtime'da güvenli biçimde override edilir.
+
+### `.env.local.example`
+- Amaç: geliştirici makinesinde `.env.local` oluşturmak için şablon sağlamak.
+- Not: `.env.local` gitignore altındadır ve repoya dahil edilmez.

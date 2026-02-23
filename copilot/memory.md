@@ -7,17 +7,14 @@
 - Bu dosya append-only kullanılacaktır; eski satırlar silinmeyecektir.
 
 ## 2026-02-23
-- `configmodule.py` içine eksik çalışma anahtarları eklendi: `RETRIEVE_API_URL`, `ZAPATA_REST_API_URL`, `ZOTERO_OUTPUT_FOLDER`, Ollama model/URL alanları ve fine-tune parametreleri.
-- `rest_api.py` import sözleşmesi kırıkları wrapper yaklaşımı ile giderildi (`citation_mapping.py`, `chromadb_integration.py`, `retriever_integration.retrieve_documents`, `faiss_integration.search_faiss`).
-- Çekirdek modüllerde opsiyonel bağımlılık fallback'ı eklendi (`colorlog`, `dotenv`, `chromadb`, `redis`, `faiss`) ve import-time çökmesi engellendi.
-- Smoke test sonucu: `rest_api` için `/status` endpointi test client üzerinden `200 {'status': 'API çalışıyor'}` döndü.
-- Ortam notu: Python 3.14 + `chromadb` kombinasyonunda Pydantic V1 uyumsuzluk uyarısı/riski var; Chroma yolu geçici olarak opsiyonel tutuldu.
 
-## 2026-02-23 / Ollama-Aktivasyon
-- `ollama_client.py` eklendi: `/api/embeddings` ve `/api/generate` çağrılarını yapan lokal istemci.
-- `embeddingmodule.py` güncellendi: embedding üretiminde Ollama birincil yol, OpenAI ikincil fallback olarak düzenlendi.
-- `rag_pipeline.py` güncellendi: sonuç normalizasyonu eklendi, FAISS sorgusu için Ollama embedding kullanıldı, yanıt üretimi Ollama prompt tabanına taşındı.
-- Doğrulama: import smoke test başarılı (`OK_OLLAMA_WIRING_IMPORTS`).
+## [2026-02-23 03:19:00] Secret-safe config hardening
+
+- `configmodule.py` güncellendi: `.env` sonrası `.env.local` (override) yükleniyor.
+- `.gitignore` güncellendi: `.env.local` ignore edildi.
+- `.env.local.example` eklendi: anahtarlar için yerel şablon.
+- Doğrulama gizli değer göstermeden yapıldı (set/placeholder_or_empty durumu).
+
 - Doğrulama: RAG çalışma testi crash olmadan döndü; `retrieve` servisi kapalı olduğunda güvenli fallback mesajı üretti.
 
 ## 2026-02-23 / OpenClaw-Köprü

@@ -1,4 +1,5 @@
 .env
+.env.local
 .git/COMMIT_EDITMSG
 .git/FETCH_HEAD
 .git/HEAD

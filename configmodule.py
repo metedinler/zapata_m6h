@@ -47,8 +47,9 @@ class Config:
     def __init__(self):
         """Konfigürasyon sınıfı, tüm sistem ayarlarını yükler ve yönetir."""
         
-        # .env dosyasını yükle
+        # .env dosyasını yükle ve varsa .env.local ile override et
         load_dotenv()
+        load_dotenv(".env.local", override=True)
 
         # 📌 Dizin Ayarları
         self.KAYNAK_DIZIN = Path(os.getenv("KAYNAK_DIZIN", r"C:\Users\mete\Zotero\zotai"))

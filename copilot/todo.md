@@ -52,3 +52,10 @@
 
 ## 2026-02-23 / Sprint-1 Kullanıcı Talebi
 - [x] P1: `configmodule.py` manuel fallback slotlarını geri ekleme - BİTTİ
+
+## 2026-02-23 / Sprint-1 Secret-safe Workflow
+- [x] P1: `.env.local` override yükleme (`configmodule.py`) - BİTTİ
+- [x] P1: `.env.local` gitignore koruması - BİTTİ
+- [x] P1: `.env.local.example` şablonu oluşturma - BİTTİ
+- [ ] P1: Kullanıcı gerçek keyleri sadece lokal `.env.local` içine yerleştirsin
+- [ ] P1: Keyler sonrası Zotero + RAG canlı doğrulama
