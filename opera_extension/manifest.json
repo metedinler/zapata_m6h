@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Zapata Browser Sender",
+  "version": "1.0.0",
+  "description": "Sağ tık ile seçili metni veya sayfa metnini Zapata'ya gönderir.",
+  "permissions": ["contextMenus", "activeTab", "scripting"],
+  "host_permissions": ["http://127.0.0.1:5000/*"],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "action": {
+    "default_title": "Zapata Browser Sender"
+  }
+}

@@ -22,6 +22,10 @@ from retriever_integration import retrieve_documents
 from citation_mapping import process_citations
 from chromadb_integration import search_chromadb
 from faiss_integration import search_faiss
+try:
+    from rag_pipeline import RAGPipeline
+except Exception:
+    RAGPipeline = None
 
 # API Uygulaması
 app = Flask(__name__)
@@ -35,6 +39,16 @@ redis_client = redis.Redis(host=config.REDIS_HOST, port=config.REDIS_PORT, decod
 # SQLite Bağlantısı
 def get_db_connection():
     return sqlite3.connect(config.SQLITE_DB_PATH)
+
+
+_rag_pipeline = None
+
+
+def get_rag_pipeline():
+    global _rag_pipeline
+    if _rag_pipeline is None and RAGPipeline is not None:
+        _rag_pipeline = RAGPipeline()
+    return _rag_pipeline
 
 # ==============================
 # 📌 API ENDPOINTLERİ
@@ -133,6 +147,38 @@ def stop_training():
 @app.route("/status", methods=["GET"])
 def get_api_status():
     return jsonify({"status": "API çalışıyor"}), 200
+
+
+@app.route("/browser/ingest", methods=["POST"])
+def browser_ingest():
+    data = request.json or {}
+    selected_text = str(data.get("selectedText", "")).strip()
+    page_text = str(data.get("pageText", "")).strip()
+    page_title = str(data.get("title", "")).strip()
+    page_url = str(data.get("url", "")).strip()
+
+    query_text = selected_text or page_text
+    if not query_text:
+        return jsonify({"error": "Gönderilecek metin bulunamadı."}), 400
+
+    query_text = query_text[:4000]
+    query = f"Başlık: {page_title}\nURL: {page_url}\nİçerik:\n{query_text}" if (page_title or page_url) else query_text
+
+    pipeline = get_rag_pipeline()
+    if pipeline is None:
+        return jsonify({"error": "RAGPipeline yüklenemedi."}), 500
+
+    response_text = pipeline.generate_response(query)
+    return jsonify({
+        "status": "ok",
+        "response": response_text,
+        "used": "selectedText" if selected_text else "pageText",
+    }), 200
+
+
+@app.route("/browser/read", methods=["POST"])
+def browser_read_alias():
+    return browser_ingest()
 
 # ==============================
 # 📌 UYGULAMA BAŞLATMA
