@@ -165,3 +165,13 @@
 ### `.env.local.example`
 - Amaç: geliştirici makinesinde `.env.local` oluşturmak için şablon sağlamak.
 - Not: `.env.local` gitignore altındadır ve repoya dahil edilmez.
+
+## 2026-02-27 / Mimari Analiz Artifactleri
+
+### `copilot/module_first200_analysis_2026-02-27.md`
+- Amaç: kök dizindeki tüm Python modüllerinin ilk 200 satır bazlı teknik envanteri.
+- İçerik: rol sınıflandırması, sınıf/fonksiyon listesi, import özeti, kök referans tespiti.
+
+### `copilot/rag_birlesik_master_plan_2026-02-27.md`
+- Amaç: `okubeni.md` vizyonunu fazlara bölünmüş uygulanabilir plana çevirmek.
+- İçerik: hedef mimari, mevcut durum farkı, faz bazlı teslim planı, risk/önlem, modül öncelik sırası.

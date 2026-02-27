@@ -41,3 +41,9 @@
 ## 2026-02-23 / Blokaj Çözümü
 - `.env` placeholder olsa bile `configmodule` seçici mantığı manuel fallback'e düşecek şekilde düzeltildi.
 - Geçici test scripti silinmedi; kurala uygun olarak `kullanilmayanlar/` altına taşındı.
+
+## 2026-02-27 / Okubeni-Gerçeklik Fark Notu
+- `okubeni.md` kapsamı (storage tarama + PDF işleme + atıf/export + eğitim + GUI) ile canlı çalışan akış arasında entegrasyon boşluğu var.
+- Çekirdek çalışan akış şu an daha çok `REST + Retrieve + RAG` tarafında stabil.
+- `document_parser.py`, `pdfprocessing.py`, `zotero_integration.py`, `citationmappingmodule.py` modülleri üretim orkestratörüne bağlı değil.
+- Bu nedenle GUI'de storage tarama/atıf-export butonları görünmüyor; endpoint ve panel eklenmesi gerekiyor.

@@ -59,3 +59,13 @@
 - [x] P1: `.env.local.example` şablonu oluşturma - BİTTİ
 - [ ] P1: Kullanıcı gerçek keyleri sadece lokal `.env.local` içine yerleştirsin
 - [ ] P1: Keyler sonrası Zotero + RAG canlı doğrulama
+
+## 2026-02-27 / Master Plan (Okubeni hedefleri)
+- [x] P0: Kök modüller ilk 200 satır analiz raporu oluşturma - BİTTİ
+- [x] P0: Birleşik mimari faz planı üretme - BİTTİ
+- [ ] P1: `storage_pipeline.py` ile Zotero storage batch orkestrasyonu
+- [ ] P1: `rest_api.py` içine `/zotero/storage/scan` + `/pipeline/process` endpointleri
+- [ ] P1: `guimodule.py` içine Storage Tara / Batch İşle paneli
+- [ ] P2: RIS/BIB/CSV export endpointleri ve kayıt akışı
+- [ ] P2: Atıf ağı endpointi (`/citations/network/<doc_id>`) ve GUI görünümü
+- [ ] P3: Fine-tune veri hazırlama + gerçek training monitor statü akışı

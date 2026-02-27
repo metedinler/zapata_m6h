@@ -70,3 +70,9 @@
 	- `MANUAL_ZOTERO_API_KEY`
 	- `MANUAL_ZOTERO_USER_ID`
 - Yükleme sırası env-first, manuel slot ikinci kaynak olacak şekilde güncellendi.
+
+## 2026-02-27 / Kapsamlı Mimari Analiz + Master Plan
+- `okubeni.md` hedefleri baz alınarak mevcut kod tabanı ile fark analizi yapıldı.
+- Kök dizindeki tüm Python modüllerinin ilk 200 satırı taranıp raporlandı: `copilot/module_first200_analysis_2026-02-27.md`.
+- Birleşik hedef mimari için faz bazlı plan üretildi: `copilot/rag_birlesik_master_plan_2026-02-27.md`.
+- Ana bulgu: PDF/atıf/kaynakça modülleri mevcut; fakat storage->batch->export zinciri GUI/API ana akışına tam bağlı değil.
