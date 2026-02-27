@@ -76,3 +76,11 @@
 - Kök dizindeki tüm Python modüllerinin ilk 200 satırı taranıp raporlandı: `copilot/module_first200_analysis_2026-02-27.md`.
 - Birleşik hedef mimari için faz bazlı plan üretildi: `copilot/rag_birlesik_master_plan_2026-02-27.md`.
 - Ana bulgu: PDF/atıf/kaynakça modülleri mevcut; fakat storage->batch->export zinciri GUI/API ana akışına tam bağlı değil.
+
+## 2026-02-27 / Recursive Tam Tarama Düzeltmesi
+- Kullanıcı geri bildirimi sonrası tarama kapsamı kök dizinle sınırlı bırakılmadı, recursive tam tarama yapıldı.
+- Toplam Python dosyası: 65 (`.git/.conda/__pycache__/node_modules` hariç).
+- Raporlar üretildi:
+	- `copilot/module_recursive_first200_analysis_2026-02-27.md`
+	- `copilot/module_recursive_summary_2026-02-27.txt`
+- Önemli tespit: Kullanıcının bahsettiği ek özelliklerin bir kısmı `birlesikdosyalar*` altındaki birleşik/arşiv dosyalarda da yer alıyor; canlı ana akışa taşınması gerekiyor.

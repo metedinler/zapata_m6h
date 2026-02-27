@@ -47,3 +47,17 @@
 - Çekirdek çalışan akış şu an daha çok `REST + Retrieve + RAG` tarafında stabil.
 - `document_parser.py`, `pdfprocessing.py`, `zotero_integration.py`, `citationmappingmodule.py` modülleri üretim orkestratörüne bağlı değil.
 - Bu nedenle GUI'de storage tarama/atıf-export butonları görünmüyor; endpoint ve panel eklenmesi gerekiyor.
+
+## 2026-02-27 / Tam Modül Tarama Notu
+- Recursive taramada 65 Python dosyası doğrulandı.
+- Özellik envanteri (ilk 200 satır bazlı) özet sayıları:
+	- Zotero: 11 dosya
+	- PDF metin: 6 dosya
+	- Tablo çıkarımı: 14 dosya
+	- Referans/atıf: 38 dosya
+	- Embedding/vektör: 38 dosya
+	- LLM/Ollama/OpenClaw: 6 dosya
+	- GUI: 9 dosya
+	- REST API: 3 dosya
+	- Eğitim/fine-tune: 12 dosya
+- "Yazmadığın onlarca özellik" tespiti doğrulandı; önemli kısmı birleşik/arşiv scriptlerde mevcut ancak üretim giriş noktalarına bağlı değil.

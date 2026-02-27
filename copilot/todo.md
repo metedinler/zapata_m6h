@@ -63,6 +63,7 @@
 ## 2026-02-27 / Master Plan (Okubeni hedefleri)
 - [x] P0: Kök modüller ilk 200 satır analiz raporu oluşturma - BİTTİ
 - [x] P0: Birleşik mimari faz planı üretme - BİTTİ
+- [x] P0: Recursive tüm modüller (alt klasörler dahil) ilk 200 taraması - BİTTİ
 - [ ] P1: `storage_pipeline.py` ile Zotero storage batch orkestrasyonu
 - [ ] P1: `rest_api.py` içine `/zotero/storage/scan` + `/pipeline/process` endpointleri
 - [ ] P1: `guimodule.py` içine Storage Tara / Batch İşle paneli
