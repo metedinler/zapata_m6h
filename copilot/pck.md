@@ -175,3 +175,11 @@
 ### `copilot/rag_birlesik_master_plan_2026-02-27.md`
 - Amaç: `okubeni.md` vizyonunu fazlara bölünmüş uygulanabilir plana çevirmek.
 - İçerik: hedef mimari, mevcut durum farkı, faz bazlı teslim planı, risk/önlem, modül öncelik sırası.
+
+### `copilot/yurutme_protokolu_merkezden_disa_2026-02-27.md`
+- Amaç: geliştirme sırasını merkezden dışa ve zordan kolaya sabitlemek.
+- İçerik: zorunlu okuma sırası, katman bazlı öncelik, sprint teslim kuralları, aktif risk uyarıları.
+
+### `copilot/module_registry_live_2026-02-27.md`
+- Amaç: modül/sınıf/fonksiyon/veri yapısı etkilerini canlı kayıtla izlemek.
+- İçerik: standart kayıt şablonu + sprint bazlı değişiklik izleri.

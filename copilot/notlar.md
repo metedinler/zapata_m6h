@@ -61,3 +61,9 @@
 	- REST API: 3 dosya
 	- Eğitim/fine-tune: 12 dosya
 - "Yazmadığın onlarca özellik" tespiti doğrulandı; önemli kısmı birleşik/arşiv scriptlerde mevcut ancak üretim giriş noktalarına bağlı değil.
+
+## 2026-02-27 / Kendine Uyarı (Context Drift Önleme)
+- Her işe başlamadan önce zorunlu okuma sırasını atlama: `ai_referansbelge -> todo -> memory -> notlar -> pck -> master_plan`.
+- Yeni bir özellik eklemeden önce: aynı işlev arşiv/combined dosyalarda var mı kontrol et.
+- Çekirdek şema netleşmeden endpoint/GUI çoğaltma yapma.
+- Her değişiklikte `module_registry_live_2026-02-27.md` içine modül/sınıf/fonksiyon etkisini yaz.

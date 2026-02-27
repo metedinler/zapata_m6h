@@ -84,3 +84,10 @@
 	- `copilot/module_recursive_first200_analysis_2026-02-27.md`
 	- `copilot/module_recursive_summary_2026-02-27.txt`
 - Önemli tespit: Kullanıcının bahsettiği ek özelliklerin bir kısmı `birlesikdosyalar*` altındaki birleşik/arşiv dosyalarda da yer alıyor; canlı ana akışa taşınması gerekiyor.
+
+## 2026-02-27 / Disiplinli Yürütme Protokolü Aktivasyonu
+- Kullanıcı talebine göre çalışma düzeni "merkezden dışa" ve "zordan kolaya" olarak katılaştırıldı.
+- Operasyon dosyaları eklendi:
+  - `copilot/yurutme_protokolu_merkezden_disa_2026-02-27.md`
+  - `copilot/module_registry_live_2026-02-27.md`
+- Bundan sonraki her geliştirme sprintinde modül/sınıf/fonksiyon/veri yapısı etkileri registry dosyasına işlenecek.

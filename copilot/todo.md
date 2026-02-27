@@ -70,3 +70,12 @@
 - [ ] P2: RIS/BIB/CSV export endpointleri ve kayıt akışı
 - [ ] P2: Atıf ağı endpointi (`/citations/network/<doc_id>`) ve GUI görünümü
 - [ ] P3: Fine-tune veri hazırlama + gerçek training monitor statü akışı
+
+## 2026-02-27 / Yürütme Sırası (Merkezden Dışa + Zordan Kolaya)
+- [ ] C0: Birleşik veri sözleşmesi + SQLite şema sabitleme
+- [ ] C1: Storage batch pipeline (`storage_pipeline.py`) ve hata izolasyonu
+- [ ] C2: Atıf/ref/export hatlarının üretim entegrasyonu
+- [ ] C3: Embedding + retrieval indeks güncelleme standardı
+- [ ] C4: REST endpoint tamamlama (`scan/process/status/network/export`)
+- [ ] C5: GUI/Opera panel entegrasyonu (storage + izleme)
+- [ ] C6: Fine-tuning gerçek veri akışı + monitor
